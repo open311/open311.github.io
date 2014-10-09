@@ -1,0 +1,17 @@
+# Site wide configuration
+
+title: Open311 Wiki
+description:
+url: 
+production_url: //open311.github.io
+
+# Jekyll configuration
+
+permalink: pretty
+markdown: kramdown
+highlighter: pygments
+gems:
+  - jekyll-sitemap
+
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]

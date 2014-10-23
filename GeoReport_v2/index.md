@@ -1,7 +1,6 @@
 ---
-layout: page
+title: GeoReport_v2
 permalink: /GeoReport_v2/
-title: "GeoReport Spec"
 ---
 
 `This spec has been frozen and finalized, but the documentation will continue to be updated for clarity. Join the `[`Mailing` `List`](http://lists.open311.org/groups/discuss)` for updates.`
@@ -21,18 +20,18 @@ Status
 
 <onlyinclude>
 
-Servers receive and manage service requests on behalf of a jurisdiction. **A comprehensive list is being maintained on the [GeoReport v2 Servers ](GeoReport v2/Servers "wikilink") page** </onlyinclude>
+Servers receive and manage service requests on behalf of a jurisdiction. **A comprehensive list is being maintained on the [GeoReport v2 Servers](/GeoReport_v2/Servers "wikilink") page** </onlyinclude>
 
 Apps & Resources
 ----------------
 
--   See the [ GeoReport v2 Developer Resources](GeoReport v2/Resources "wikilink") page for code libraries and open source applications.
--   See the [ GeoReport v2 Support](GeoReport v2/Support "wikilink") page for applications, products, and services that support the spec.
+-   See the [GeoReport v2 Developer Resources](/GeoReport_v2/Resources "wikilink") page for code libraries and open source applications.
+-   See the [GeoReport v2 Support](/GeoReport_v2/Support "wikilink") page for applications, products, and services that support the spec.
 
 Service Discovery
 -----------------
 
-GeoReport v2 and subsequent Open311 APIs are also required to have a standard service discovery file associated with them to provide routing between versions and types of APIs. See the [Service Discovery](Service Discovery "wikilink") page for details of the specification.
+GeoReport v2 and subsequent Open311 APIs are also required to have a standard service discovery file associated with them to provide routing between versions and types of APIs. See the [Service Discovery](/Service_Discovery "wikilink") page for details of the specification.
 
 Internationalization and Encoding
 ---------------------------------
@@ -55,7 +54,7 @@ All text returned by the service, whether in XML, JSON, or any other text-based 
 Format Support
 --------------
 
-XML is a required format, but JSON can be provided at the discretion of the API provider. The output formats supported by the provider are indicated through the [Service Discovery](Service Discovery "wikilink") formats field for the API endpoint being used. The client can specify the desired format by appending the format name to the resource. For example a GET request to /services.xml for text/xml output from the services resource and /services/01.json for application/json ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) output for a specific service definition.
+XML is a required format, but JSON can be provided at the discretion of the API provider. The output formats supported by the provider are indicated through the [Service Discovery](/Service_Discovery "wikilink") formats field for the API endpoint being used. The client can specify the desired format by appending the format name to the resource. For example a GET request to /services.xml for text/xml output from the services resource and /services/01.json for application/json ([RFC 4627](http://www.ietf.org/rfc/rfc4627.txt)) output for a specific service definition.
 
 The HTTP content-type headers should look like this for each format:
 
@@ -93,7 +92,7 @@ API methods
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | URL              | [https://[API](https://[API) endpoint]/services.[format]                                                                                               |
 | Sample URL       | https://api.city.gov/dev/v2/services.xml?jurisdiction_id=city.gov                                                                                     |
-| Formats          | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink"))                                                                   |
+| Formats          | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink"))                                                                  |
 | HTTP Method      | GET                                                                                                                                                    |
 | Requires API Key | No                                                                                                                                                     |
 
@@ -105,22 +104,22 @@ API methods
 
 #### Response
 
-| Field Name      | Description                                                                                                                                                                                                       | Notes & Requirements                                                                                                                              |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Field Name      | Description                                                                                                                                                                                                        | Notes & Requirements                                                                                                                              |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | services ⇊      |
 | service ↴       |
-| service_code   | The unique identifier for the service request type                                                                                                                                                                |                                                                                                                                                   |
-| service_name   | The human readable name of the service request type                                                                                                                                                               |                                                                                                                                                   |
-| description     | A brief description of the service request type.                                                                                                                                                                  |                                                                                                                                                   |
-| metadata        | Determines whether there are additional form fields for this service type.                                                                                                                                        
-                                                                                                                                                                                                                                      
-                   -   <span class="strict-value">true</span>: This service request type requires additional metadata so the client will need to make a call to the [Service Definition](#GET_Service_Definition "wikilink") method.  
-                   -   <span class="strict-value">false</span>: No additional information is required and a call to the [Service Definition](#GET_Service_Definition "wikilink") method is not needed.                                | Possible values: <span class="strict-value">true</span>, <span class="strict-value">false</span>.                                                 |
-| type            | -   <span class="strict-value">realtime</span>: The service request ID will be returned immediately after the service request is submitted.                                                                       
-                   -   <span class="strict-value">batch</span>: A token will be returned immediately after the service request is submitted. This token can then be later used to return the service request ID.                      
-                   -   <span class="strict-value">blackbox</span>: No service request ID will be returned after the service request is submitted                                                                                      | Possible values: <span class="strict-value">realtime</span>, <span class="strict-value">batch</span>, <span class="strict-value">blackbox</span>. |
-| keywords        | A comma separated list of tags or keywords to help users identify the request type. This can provide synonyms of the service_name and group.                                                                     |                                                                                                                                                   |
-| group           | A category to group this service type within. This provides a way to group several service request types under one category such as "sanitation"                                                                  |                                                                                                                                                   |
+| service_code   | The unique identifier for the service request type                                                                                                                                                                 |                                                                                                                                                   |
+| service_name   | The human readable name of the service request type                                                                                                                                                                |                                                                                                                                                   |
+| description     | A brief description of the service request type.                                                                                                                                                                   |                                                                                                                                                   |
+| metadata        | Determines whether there are additional form fields for this service type.
+
+                   -   <span class="strict-value">true</span>: This service request type requires additional metadata so the client will need to make a call to the [Service Definition](/#GET_Service_Definition "wikilink") method.
+                   -   <span class="strict-value">false</span>: No additional information is required and a call to the [Service Definition](/#GET_Service_Definition "wikilink") method is not needed.                                | Possible values: <span class="strict-value">true</span>, <span class="strict-value">false</span>.                                                 |
+| type            | -   <span class="strict-value">realtime</span>: The service request ID will be returned immediately after the service request is submitted.
+                   -   <span class="strict-value">batch</span>: A token will be returned immediately after the service request is submitted. This token can then be later used to return the service request ID.
+                   -   <span class="strict-value">blackbox</span>: No service request ID will be returned after the service request is submitted                                                                                       | Possible values: <span class="strict-value">realtime</span>, <span class="strict-value">batch</span>, <span class="strict-value">blackbox</span>. |
+| keywords        | A comma separated list of tags or keywords to help users identify the request type. This can provide synonyms of the service_name and group.                                                                      |                                                                                                                                                   |
+| group           | A category to group this service type within. This provides a way to group several service request types under one category such as "sanitation"                                                                   |                                                                                                                                                   |
 
 #### Possible Errors
 
@@ -206,7 +205,7 @@ The numbers represent the HTTP status code returned for each error type:
 | Purpose          | Define attributes associated with a service code. These attributes can be unique to the city/jurisdiction.                                                                |
 | URL              | [https://[API](https://[API) endpoint]/services/[service_code].[format]                                                                                                  |
 | Sample URL       | https://api.city.gov/dev/v2/services/033.xml?jurisdiction_id=city.gov                                                                                                    |
-| Formats          | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink"))                                                                                      |
+| Formats          | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink"))                                                                                     |
 | HTTP Method      | GET                                                                                                                                                                       |
 | Requires API Key | No                                                                                                                                                                        |
 
@@ -225,21 +224,21 @@ The numbers represent the HTTP status code returned for each error type:
 | service_code           | Returns the service_code associated with the definition, the same one submitted for this call.                                                                                                                                          |                                                                                                                                                                                                                                                                                       |
 | attributes ⇊            |
 | attribute ↴             |
-| variable                | -   <span class="strict-value">true</span> denotes that user input is needed                                                                                                                                                             
+| variable                | -   <span class="strict-value">true</span> denotes that user input is needed
                            -   <span class="strict-value">false</span> means the attribute is only used to present information to the user within the description field                                                                                              | Possible values: <span class="strict-value">true</span>, <span class="strict-value">false</span>.                                                                                                                                                                                     |
 | code                    | A unique identifier for the attribute                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                       |
-| datatype                | Denotes the type of field used for user input.                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                     
-                           -   <span class="strict-value">string</span>: A string of characters without line breaks. Represented in an HTML form using an <input> tag                                                                                                
-                           -   <span class="strict-value">number</span>: A numeric value. Represented in an HTML form using an <input> tag                                                                                                                           
-                           -   <span class="strict-value">datetime</span>: The input generated must be able to transform into a valid ISO 8601 date. Represented in an HTML form using <input> tags                                                                  
-                           -   <span class="strict-value">text</span>: A string of characters that may contain line breaks. Represented in an HTML form using an                                                                                                     
-                               <textarea>                                                                                                                                                                                                                            
-                               tag                                                                                                                                                                                                                                   
-                                                                                                                                                                                                                                                                     
-                           -   <span class="strict-value">singlevaluelist</span>: A set of predefined values (specified in this response) where only one value may be selected. Represented in an HTML form using the <select> and <option> tags                     
+| datatype                | Denotes the type of field used for user input.
+
+                           -   <span class="strict-value">string</span>: A string of characters without line breaks. Represented in an HTML form using an <input> tag
+                           -   <span class="strict-value">number</span>: A numeric value. Represented in an HTML form using an <input> tag
+                           -   <span class="strict-value">datetime</span>: The input generated must be able to transform into a valid ISO 8601 date. Represented in an HTML form using <input> tags
+                           -   <span class="strict-value">text</span>: A string of characters that may contain line breaks. Represented in an HTML form using an
+                               <textarea>
+                               tag
+
+                           -   <span class="strict-value">singlevaluelist</span>: A set of predefined values (specified in this response) where only one value may be selected. Represented in an HTML form using the <select> and <option> tags
                            -   <span class="strict-value">multivaluelist</span>: A set of predefined values (specified in this response) where several values may be selected. Represented in an HTML form using the <select multiple="multiple"> and <option> tags  | Options: <span class="strict-value">string</span>, <span class="strict-value">number</span>, <span class="strict-value">datetime</span>, <span class="strict-value">text</span>, <span class="strict-value">singlevaluelist</span>, <span class="strict-value">multivaluelist</span>. |
-| required                | -   <span class="strict-value">true</span> means that the value is required to submit service request                                                                                                                                    
+| required                | -   <span class="strict-value">true</span> means that the value is required to submit service request
                            -   <span class="strict-value">false</span> means that the value not required.                                                                                                                                                            | Options: <span class="strict-value">true</span>, <span class="strict-value">false</span>.                                                                                                                                                                                             |
 | datatype_description   | A description of the datatype which helps the user provide their input                                                                                                                                                                   |                                                                                                                                                                                                                                                                                       |
 | order                   | The sort order that the attributes will be presented to the user. 1 is shown first in the list.                                                                                                                                          | Any positive integer not used for other attributes in the same service_code                                                                                                                                                                                                          |
@@ -263,15 +262,15 @@ The numbers represent the HTTP status code returned for each error type:
 
     <?xml version="1.0" encoding="utf-8"?>
     <service_definition>
-        <service_code>DMV66</service_code>  
+        <service_code>DMV66</service_code>
         <attributes>
             <attribute>
                 <variable>true</variable>
                 <code>WHISHETN</code>
                 <datatype>singlevaluelist</datatype>
                 <required>true</required>
-                <datatype_description></datatype_description>       
-                <order>1</order>    
+                <datatype_description></datatype_description>
+                <order>1</order>
                 <description>What is the ticket/tag/DL number?</description>
                 <values>
                     <value>
@@ -281,9 +280,9 @@ The numbers represent the HTTP status code returned for each error type:
                     <value>
                         <key>124</key>
                         <name>Chrysler</name>
-                    </value>            
+                    </value>
                 </values>
-            </attribute>    
+            </attribute>
         </attributes>
     </service_definition>
 
@@ -318,23 +317,23 @@ The numbers represent the HTTP status code returned for each error type:
 
 ### POST Service Request
 
-| Purpose          | Create service requests                                                              |
-|------------------|--------------------------------------------------------------------------------------|
-| URL              | [https://[API](https://[API) endpoint]/requests.[format]                             |
-| Sample URL       | https://api.city.gov/dev/v2/requests.xml                                             |
-| Format sent      | Content-Type: application/x-www-form-urlencoded                                      |
-| Formats returned | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink")) |
-| HTTP Method      | POST                                                                                 |
-| Requires API Key | Yes                                                                                  |
+| Purpose          | Create service requests                                                               |
+|------------------|---------------------------------------------------------------------------------------|
+| URL              | [https://[API](https://[API) endpoint]/requests.[format]                              |
+| Sample URL       | https://api.city.gov/dev/v2/requests.xml                                              |
+| Format sent      | Content-Type: application/x-www-form-urlencoded                                       |
+| Formats returned | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink")) |
+| HTTP Method      | POST                                                                                  |
+| Requires API Key | Yes                                                                                   |
 
 #### Required Arguments
 
 | Field Name                                                   | Description                                                   | Notes & Requirements                                                                                                                                                                                                                                                               |
 |--------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | jurisdiction_id                                             |                                                               | <span style="color: red">This is only required if the endpoint serves multiple jurisdictions</span>                                                                                                                                                                                |
-| service_code                                                |                                                               | This is obtained from [GET Service List](#GET_Service_List "wikilink") method                                                                                                                                                                                                      |
+| service_code                                                |                                                               | This is obtained from [GET Service List](/#GET_Service_List "wikilink") method                                                                                                                                                                                                     |
 | <span class="field-alternatives">location parameter</span>   | A full location parameter must be submitted.                  | One of <span class="strict-value">lat</span> & <span class="strict-value">long</span> or <span class="strict-value">address_string</span> or <span class="strict-value">address_id</span>                                                                                        |
-| attribute                                                    | An array of key/value responses based on Service Definitions. | This takes the form of attribute[code]=value where multiple code/value pairs can be specified as well as multiple values for the same code in the case of a multivaluelist datatype (attribute[code1][]=value1&attribute[code1][]=value2&attribute[code1][]=value3) - see example. 
+| attribute                                                    | An array of key/value responses based on Service Definitions. | This takes the form of attribute[code]=value where multiple code/value pairs can be specified as well as multiple values for the same code in the case of a multivaluelist datatype (attribute[code1][]=value1&attribute[code1][]=value2&attribute[code1][]=value3) - see example.
                                                                                                                                 <span style="color:red">This is only required if the service_code requires a service definition with required fields</span>.                                                                                                                                                       |
 
 #### Optional Arguments
@@ -356,14 +355,14 @@ The numbers represent the HTTP status code returned for each error type:
 
 #### Response
 
-| Field Name             | Description                                                                                                             | Notes & Requirements                                                                            |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Field Name             | Description                                                                                                              | Notes & Requirements                                                                            |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | service_requests ⇊    |
 | request ↴              |
-| service_request_id   | The unique ID of the service request created.                                                                           | <span style="color: red">This should not be returned if token is returned</span>                |
-| token                  | If returned, use this to call [GET service_request_id from a token](#GET_service_request_id_from_a_token "wikilink"). | <span style="color: red">This should not be returned if service_request_id is returned</span> |
-| service_notice        | Information about the action expected to fulfill the request or otherwise address the information reported.             | May not be returned                                                                             |
-| account_id            | The unique ID for the user account of the person submitting the request.                                                | May not be returned                                                                             |
+| service_request_id   | The unique ID of the service request created.                                                                            | <span style="color: red">This should not be returned if token is returned</span>                |
+| token                  | If returned, use this to call [GET service_request_id from a token](/#GET_service_request_id_from_a_token "wikilink"). | <span style="color: red">This should not be returned if service_request_id is returned</span> |
+| service_notice        | Information about the action expected to fulfill the request or otherwise address the information reported.              | May not be returned                                                                             |
+| account_id            | The unique ID for the user account of the person submitting the request.                                                 | May not be returned                                                                             |
 
 #### Possible Errors
 
@@ -413,7 +412,7 @@ The numbers represent the HTTP status code returned for each error type:
 | Purpose          | Get the service_request_id from a temporary token. This is unnecessary if the response from creating a service request does not contain a token. |
 | URL              | [https://[API](https://[API) endpoint]/tokens/[token id].[format]                                                                                  |
 | Sample URL       | https://api.city.gov/dev/v2/tokens/123456.xml?jurisdiction_id=city.gov                                                                            |
-| Formats          | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink"))                                                               |
+| Formats          | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink"))                                                              |
 | HTTP Method      | GET                                                                                                                                                |
 | Requires API Key | No                                                                                                                                                 |
 
@@ -422,16 +421,16 @@ The numbers represent the HTTP status code returned for each error type:
 | Field Name                             | Description | Notes & Requirements                                                                                |
 |----------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
 | jurisdiction_id                       |             | <span style="color: red">This is only required if the endpoint serves multiple jurisdictions</span> |
-| <span class="field-url">token</span>   |             | This is obtained from the [POST Service Requests](#POST_Service_Requests "wikilink") method         |
+| <span class="field-url">token</span>   |             | This is obtained from the [POST Service Requests](/#POST_Service_Requests "wikilink") method        |
 
 #### Response
 
-| Field Name             | Description                                                                                                                                | Notes & Requirements |
-|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Field Name             | Description                                                                                                                                 | Notes & Requirements |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | service_requests ⇊    |
 | request ↴              |
-| service_request_id   | The unique ID for the service request created. This can be used to call the [GET Service Request](#GET_Service_Request "wikilink") method. |                      |
-| token                  | The token ID used to make this call.                                                                                                       |                      |
+| service_request_id   | The unique ID for the service request created. This can be used to call the [GET Service Request](/#GET_Service_Request "wikilink") method. |                      |
+| token                  | The token ID used to make this call.                                                                                                        |                      |
 
 #### Possible Errors
 
@@ -470,7 +469,7 @@ The numbers represent the HTTP status code returned for each error type:
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | URL              | [https://[API](https://[API) endpoint]/requests.[format]                                                                                       |
 | Sample URL       | https://api.city.gov/dev/v2/requests.xml?start_date=2010-05-24T00:00:00Z&end_date=2010-06-24T00:00:00Z&status=open&jurisdiction_id=city.gov |
-| Formats          | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink"))                                                           |
+| Formats          | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink"))                                                          |
 | HTTP Method      | GET                                                                                                                                            |
 | Requires API Key | No                                                                                                                                             |
 
@@ -497,9 +496,9 @@ The numbers represent the HTTP status code returned for each error type:
 | service_requests ⇊    |
 | request ↴              |
 | service_request_id   | The unique ID of the service request created.                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| status                 | The current status of the service request.                                                                                                   
-                                                                                                                                                                        
-                          -   <span class="strict-value">open</span>: it has been reported.                                                                             
+| status                 | The current status of the service request.
+
+                          -   <span class="strict-value">open</span>: it has been reported.
                           -   <span class="strict-value">closed</span>: it has been resolved.                                                                           | Options: <span class="strict-value">open</span>, <span class="strict-value">closed</span>                                                                                                                                                                                                                                                                                                                                                             |
 | status_notes          | Explanation of why status was changed to current state or more details on current status than conveyed with status alone.                    | May not be returned                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | service_name          | The human readable name of the service request type                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -622,13 +621,13 @@ The numbers represent the HTTP status code returned for each error type:
 
 ### GET Service Request
 
-| Purpose          | Query the current status of an individual request                                    |
-|------------------|--------------------------------------------------------------------------------------|
-| URL              | [https://[API](https://[API) endpoint]/requests/[service_request_id].[format]      |
-| Sample URL       | https://api.city.gov/dev/v2/requests/123456.xml?jurisdiction_id=city.gov            |
-| Formats          | XML (JSON available if denoted by [Service Discovery](Service Discovery "wikilink")) |
-| HTTP Method      | GET                                                                                  |
-| Requires API Key | No                                                                                   |
+| Purpose          | Query the current status of an individual request                                     |
+|------------------|---------------------------------------------------------------------------------------|
+| URL              | [https://[API](https://[API) endpoint]/requests/[service_request_id].[format]       |
+| Sample URL       | https://api.city.gov/dev/v2/requests/123456.xml?jurisdiction_id=city.gov             |
+| Formats          | XML (JSON available if denoted by [Service Discovery](/Service_Discovery "wikilink")) |
+| HTTP Method      | GET                                                                                   |
+| Requires API Key | No                                                                                    |
 
 #### Required Arguments
 
@@ -648,9 +647,9 @@ None
 | service_requests ⇊    |
 | request ↴              |
 | service_request_id   | The unique ID of the service request created.                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| status                 | The current status of the service request.                                                                                                   
-                                                                                                                                                                        
-                          -   <span class="strict-value">open</span>: it has been reported.                                                                             
+| status                 | The current status of the service request.
+
+                          -   <span class="strict-value">open</span>: it has been reported.
                           -   <span class="strict-value">closed</span>: it has been resolved.                                                                           | Options: <span class="strict-value">open</span>, <span class="strict-value">closed</span>                                                                                                                                                                                                                                                                                                                                                             |
 | status_notes          | Explanation of why status was changed to current state or more details on current status than conveyed with status alone.                    | May not be returned                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | service_name          | The human readable name of the service request type                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -748,7 +747,7 @@ HTTP error codes are required, but the code in the response body shouldn't neces
 
 **Example:** <tabs> <tab title="XML">
 
-    HTTP/1.1 403 Forbidden 
+    HTTP/1.1 403 Forbidden
 
     <?xml version="1.0" encoding="utf-8"?>
     <errors>
@@ -760,7 +759,7 @@ HTTP error codes are required, but the code in the response body shouldn't neces
 
 </tab> <tab title="JSON">
 
-    HTTP/1.1 403 Forbidden 
+    HTTP/1.1 403 Forbidden
 
     [
       {

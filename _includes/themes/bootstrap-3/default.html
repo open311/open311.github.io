@@ -51,21 +51,43 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <a class="navbar-brand" href="//open311.org">{{ site.title }}</a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="//www.open311.org/about">Blog</a></li>
+            
+         
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="//wiki-dev.open311.org/">Wiki</a></li>
+                <li><a href="//wiki-dev.open311.org/GeoReport_v2">GeoReport v2</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discussion<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="//lists.open311.org/groups/discuss">Mailing List</a></li>
+                <li><a href="//github.com/open311/open311.github.io/issues">Issue Tracker</a></li>
+              </ul>
+            </li>
+
+            <li><a href="//www.open311.org/about">About</a></li>
+            <li><a href="//www.open311.org/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <div id="page-header">
+      <div class="container">
+        <h2>Wiki</h2>
+      </div>
+    </div>
 
     <div id="main">
       <div class="container">
@@ -76,6 +98,15 @@
     <div id="footer">
       <div class="container">
         <p>{{ site.title }}</p>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+          </ul>
+        </nav>
+
       </div>
     </div>
 

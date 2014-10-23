@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: Open311 Wiki
+title: Open311
 description:
 url: 
 production_url: //wiki-dev.open311.org
@@ -15,3 +15,11 @@ gems:
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"

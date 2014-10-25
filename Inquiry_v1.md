@@ -1,5 +1,5 @@
 ---
-title: Inquiry_v1
+title: Inquiry v1
 permalink: /Inquiry_v1/
 ---
 

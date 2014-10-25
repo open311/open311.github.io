@@ -1,5 +1,5 @@
 ---
-title: San_Francisco
+title: San Francisco
 permalink: /San_Francisco/
 ---
 

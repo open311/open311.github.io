@@ -1,5 +1,5 @@
 ---
-title: Open_APIs
+title: Open APIs
 permalink: /Open_APIs/
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: GeoWeb_DNS
+title: GeoWeb DNS
 permalink: /GeoWeb_DNS/
 ---
 

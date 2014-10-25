@@ -1,5 +1,5 @@
 ---
-title: Service_Discovery
+title: Service Discovery
 permalink: /Service_Discovery/
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Open_Source
+title: Open Source
 permalink: /Open_Source/
 ---
 

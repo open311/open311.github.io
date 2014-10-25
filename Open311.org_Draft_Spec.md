@@ -1,5 +1,5 @@
 ---
-title: Open311.org_Draft_Spec
+title: Open311.org Draft Spec
 permalink: /Open311.org_Draft_Spec/
 ---
 

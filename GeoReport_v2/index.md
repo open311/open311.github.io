@@ -1,5 +1,5 @@
 ---
-title: GeoReport_v2
+title: GeoReport v2
 permalink: /GeoReport_v2/
 ---
 

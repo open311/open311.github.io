@@ -1,5 +1,5 @@
 ---
-title: Compliance
+title: GeoReport v2 Compliance
 permalink: /GeoReport_v2/Compliance/
 ---
 

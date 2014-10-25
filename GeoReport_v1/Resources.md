@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: GeoReport v1 Resources
 permalink: /GeoReport_v1/Resources/
 ---
 

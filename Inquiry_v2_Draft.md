@@ -1,5 +1,5 @@
 ---
-title: Inquiry_v2_Draft
+title: Inquiry v2 Draft
 permalink: /Inquiry_v2_Draft/
 ---
 

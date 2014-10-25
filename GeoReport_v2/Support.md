@@ -1,5 +1,5 @@
 ---
-title: Support
+title: GeoReport v2 Support
 permalink: /GeoReport_v2/Support/
 ---
 

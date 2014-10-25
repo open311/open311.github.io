@@ -1,5 +1,5 @@
 ---
-title: Washington_D.C.
+title: Washington D.C.
 permalink: /Washington_D.C./
 ---
 

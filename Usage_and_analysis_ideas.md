@@ -1,5 +1,5 @@
 ---
-title: Usage_and_analysis_ideas
+title: Usage and analysis ideas
 permalink: /Usage_and_analysis_ideas/
 ---
 

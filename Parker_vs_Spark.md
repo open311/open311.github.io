@@ -1,5 +1,5 @@
 ---
-title: Parker_vs_Spark
+title: Parker vs Spark
 permalink: /Parker_vs_Spark/
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: GeoReport_iPhone
+title: GeoReport iPhone
 permalink: /GeoReport_iPhone/
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Inquiry_Precedents
+title: Inquiry Precedents
 permalink: /Inquiry_Precedents/
 ---
 

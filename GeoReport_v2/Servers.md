@@ -1,5 +1,5 @@
 ---
-title: Servers
+title: GeoReport v2 Servers
 permalink: /GeoReport_v2/Servers/
 ---
 

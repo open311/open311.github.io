@@ -1,5 +1,5 @@
 ---
-title: New_York_City
+title: New York City
 permalink: /New_York_City/
 ---
 

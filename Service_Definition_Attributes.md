@@ -1,5 +1,5 @@
 ---
-title: Service_Definition_Attributes
+title: Service Definition Attributes
 permalink: /Service_Definition_Attributes/
 ---
 

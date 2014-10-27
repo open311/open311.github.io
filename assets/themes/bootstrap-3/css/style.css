@@ -14,6 +14,14 @@ header#top a {
   color : #fff;
 }
 
+#main h2, #main h3, #main h4, #main h5, #main h6 {
+  margin-top : 2em;
+}
+
+#main h2 {
+  border-bottom : 1px solid #E8E8E8;
+}
+
 #main {
   background-color : #fff;
   padding-top : 20px;
@@ -73,3 +81,70 @@ header#top a {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+
+.resource-table {
+  border-top : .5em #A6A6A6 solid;
+}
+
+.resource-table tr td:nth-child(1) {
+  background-color: #F0F7FA !important;
+}
+
+.resource-table tr td:nth-child(1),
+.response-table tr td:nth-child(1), 
+.request-table tr td:nth-child(1) {
+  width : 20%;
+  font-weight : bold;
+}
+
+.response-table code, 
+.request-table code {
+  color : #001F75;
+}
+
+.request-table tr td:nth-child(1) code {
+ color : #427300; 
+}
+
+.request-table tr td:nth-child(1) code.field-url {
+ color : #000 
+}
+
+.response-table tr td:nth-child(2), 
+.request-table tr td:nth-child(2) {
+  width : 40%;
+}
+
+.response-table th, 
+.request-table th {
+  background-color: #E8E8E8;
+}
+
+.tab-content {
+  margin-bottom : 7em;
+}
+
+#toc-container {
+  border : 1px solid #ccc;
+  margin : 0 0 1em 1em;
+  padding : .5em;
+  background-color: #F5F5F5;
+}
+
+#toc-container h2 {
+  margin-top : .25em;
+  font-size : 1em;
+  border-bottom : none;
+}
+
+#toc-container ul {
+  padding-left : 1.5em;
+}
+
+@media (min-width: 1200px) {
+  #toc-container {
+    float: right;
+    width : 25%;
+  }
+}

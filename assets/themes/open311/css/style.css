@@ -6,8 +6,9 @@ header.navbar {
   margin-bottom : 0;
 }
 
-header#top {
-  background-color: #FAB639;
+header#top, 
+.dropdown-menu {
+  background-color: #FFA719;
 }
 
 header#top a {

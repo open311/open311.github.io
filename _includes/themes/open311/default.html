@@ -19,6 +19,10 @@
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 	
+    <!-- Custom fonts -->
+    <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,600italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
@@ -56,7 +60,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="//open311.org">{{ site.title }}</a>
+          <a class="navbar-brand" href="//open311.org"><h1>{{ site.title }}</h1></a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
           <ul class="nav navbar-nav navbar-right">
@@ -102,7 +106,7 @@
 
     <div id="footer">
       <div class="container">
-        <p>{{ site.title }}</p>
+        <a class="navbar-brand" href="//open311.org"><h1>{{ site.title }}</h1></a>
 
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
           <ul class="nav navbar-nav">

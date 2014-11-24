@@ -13,8 +13,7 @@
 
     <!-- Bootstrap styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Optional theme -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
     
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
@@ -34,14 +33,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <!-- Update these with your own images
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    -->
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -94,7 +85,13 @@
 
     <div id="page-header">
       <div class="container">
-        <h2>Wiki</h2>
+        <h2 class="pull-left"><a href="{{ site.root_url }}/">Wiki</a></h2>
+
+        <div class="revision-buttons pull-right">
+          <a class="btn btn-default edit-button" href="//github.com/{{ site.org_name }}/{{ site.repo_name }}/edit/{{ site.branch }}/{{ page.path }}">Edit this Page</a>
+          <a class="btn btn-default" href="//github.com/{{ site.org_name }}/{{ site.repo_name }}/commits/{{ site.branch }}/{{ page.path }}">View Revision History</a>
+        </div>
+
       </div>
     </div>
 
@@ -108,11 +105,29 @@
       <div class="container">
         <a class="navbar-brand" href="//open311.org"><h1>{{ site.title }}</h1></a>
 
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
+       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="//www.open311.org/about">Blog</a></li>
+ 
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="//wiki-dev.open311.org/">Wiki</a></li>
+                <li><a href="//wiki-dev.open311.org/GeoReport_v2">GeoReport v2</a></li>
+              </ul>
+            </li>
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Discussion<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="//lists.open311.org/groups/discuss">Mailing List</a></li>
+                <li><a href="//github.com/open311/open311.github.io/issues">Issue Tracker</a></li>
+              </ul>
+            </li>
+
+            <li><a href="//www.open311.org/about">About</a></li>
+            <li><a href="//www.open311.org/contact">Contact</a></li>
           </ul>
         </nav>
 

@@ -1,12 +1,15 @@
 # Site wide configuration
-
 title: Open311
 description:
 url: 
 production_url: //wiki-dev.open311.org
 
-# Jekyll configuration
+#Github Repo
+repo_name: open311.github.io
+branch: master
+org_name: open311
 
+# Jekyll configuration
 permalink: pretty
 markdown: kramdown
 highlighter: pygments

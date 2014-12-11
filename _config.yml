@@ -22,3 +22,18 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"
+
+
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+#
+JB :
+  version : 0.3.0
+
+  # Settings for analytics helper
+  # Set 'provider' to the analytics provider you want to use.
+  # Set 'provider' to false to turn analytics off globally.
+  #        
+  analytics :
+    provider : google 
+    google : 
+        tracking_id : 'UA-8102379-3'

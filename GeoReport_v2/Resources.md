@@ -9,7 +9,7 @@ Open source developer resources for the [GeoReport v2](/GeoReport_v2 "wikilink")
 
 Server applications provide an API endpoint and can receive and manage reports.
 
--   [uReport Open311 Server](http://code.google.com/p/civic-crm). PHP-based Open311 Server & CRM by Bloomington
+-   [uReport Open311 Server](https://github.com/City-of-Bloomington/uReport). PHP-based Open311 Server & CRM by Bloomington
 -   [GeoReport v2 Server](https://github.com/miamidade/georeport-server) - Python-based middleware/server by Miami-Dade County
 -   [GeoReport v2 Server by Diptanu](https://github.com/diptanu/open311) - Python-based CRM server in early stages of development
 -   [Mark-a-Spot Drupal Distribution](https://github.com/markaspot/mark-a-spot). There's also [Integration](https://github.com/markaspot/mas-open311) for the older standalone [Mark-a-Spot CakePHP](https://github.com/markaspot/Mark-a-Spot-1.6-CakePHP) code.

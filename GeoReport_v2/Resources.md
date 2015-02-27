@@ -28,6 +28,7 @@ Software that interacts with an Open311 server by connecting to an API.
 
 -   [GeoReporter Open311 Android app](https://github.com/City-of-Bloomington/open311-android) - download [GeoReporter from Google play](https://play.google.com/store/apps/details?id=gov.in.bloomington.georeporter&hl=en)
 -   [GeoReporter Open311 iPhone app](https://github.com/City-of-Bloomington/open311-mobile) - download [GeoReporter from the Apple App Store](http://itunes.apple.com/us/app/georeporter/id487304759)
+-   [Open311 Wordpress Plugin](https://github.com/GSA/wp-open311) (still early development)
 -   [Open311 Proxy](https://github.com/City-of-Bloomington/open311-proxy) - a PHP/HTML/javascript client that doesn't expose API keys
 -   [Open311 Facebook app](https://github.com/codeforamerica/open311_facebook)
 -   [Open311 Plugin for Ushahidi](https://github.com/mapmeld/Open311-Plugin-for-Ushahidi) - can reroute issues from Ushahidi to an external Open311 endpoint.

@@ -11,16 +11,15 @@ Server applications provide an API endpoint and can receive and manage reports.
 
 -   [uReport Open311 Server](https://github.com/City-of-Bloomington/uReport). PHP-based Open311 Server & CRM by Bloomington
 -   [open311server](https://github.com/andrewsage/open311server) - Ruby Sinatra Open311 Server
--   [GeoReport v2 Server](https://github.com/miamidade/georeport-server) - Python-based middleware/server by Miami-Dade County
--   [GeoReport v2 Server by Diptanu](https://github.com/diptanu/open311) - Python-based CRM server in early stages of development
+-   [GeoReport v2 Server](https://github.com/miamidade/georeport-server) - Python-based middleware/server by Miami-Dade County. There's also a [Java implementation in development](https://github.com/miamidade/open311)
 -   [Mark-a-Spot Drupal Distribution](https://github.com/markaspot/mark-a-spot). There's also [Integration](https://github.com/markaspot/mas-open311) for the older standalone [Mark-a-Spot CakePHP](https://github.com/markaspot/Mark-a-Spot-1.6-CakePHP) code.
--   [Open311 on Joget](https://github.com/codeforamerica/open311-on-joget). See [Blog post](http://codeforamerica.org/2011/09/09/ashishs-cfa-summer-starting-the-open311-center/). (in development).
--   [(Deprecated) Open311 API in PHP](http://svn.ashlock.us/public/georeport-v2-api-php/) - raw API with no UI - *refer to fms-endpoint and Ushahidi plugin below which have improved this code*
+-   [Accela Open311](https://github.com/Accela-Inc/accela-open311) - Node.js Server
+-   [Open311 Simple CRM](https://github.com/GSA/open311-simple-crm/) - Very basic CRM based on FMS-Endpoint
+-   [FMS-Endpoint Open311 API for FixMyStreet](https://github.com/mysociety/fms-endpoint) - "fms-endpoint" using Codeigniter PHP - by MySociety
+-   [FixMyStreet integration](https://github.com/search?type=Everything&language>=&q=open311+repo%3Amysociety%2Ffixmystreet&repo=&langOverride=&x=0&y=0&start_value=1). See [FixMyStreet.com/open311](http://fixmystreet.com/open311) and example of support within a city: [Southampton UK](http://southampton.fixmystreet.com/open311)
 -   [Open311 Plugin for Ushahidi](https://github.com/mapmeld/Open311-Plugin-for-Ushahidi) (in development. [More background on the Ushahidi wiki](http://wiki.ushahidi.com/pages/viewpage.action?pageId=4260162))
--   [FMS-Endpoint Open311 API for FixMyStreet](https://github.com/mysociety/fms-endpoint) - "fms-endpoint" using Codeigniter PHP - by MySociety (Doesn't require FixMyStreet. Based on two codebases listed above)
--   [<https://github.com/search?type=Everything&language>=&q=open311+repo%3Amysociety%2Ffixmystreet&repo=&langOverride=&x=0&y=0&start_value=1 FixMyStreet integration]. See [FixMyStreet.com/open311](http://fixmystreet.com/open311) and example of support within a city: [Southampton UK](http://southampton.fixmystreet.com/open311)
--   [Shareabouts](http://openplans.org/2011/12/08/hello-shareabouts/) has planned support in the future.
--   I think there may also be some ongoing work for [Kajoo](https://github.com/mjording/kajoo) integration
+-   [Open311 on Joget](https://github.com/codeforamerica/open311-on-joget). See [Blog post](http://codeforamerica.org/2011/09/09/ashishs-cfa-summer-starting-the-open311-center/). (in development).
+-   See also: search results on GitHub for [Open311 or GeoReport](https://github.com/search?o=desc&q=open311+OR+georeport&ref=searchresults&s=updated&type=Repositories) 
 
 #### Client Applications
 

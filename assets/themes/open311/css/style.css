@@ -82,7 +82,7 @@ header .navbar-nav > li > a:hover {
   padding-top : 1.25em;
 }
 
-#page-header .revision-buttons .edit-button {
+.edit-button {
   color : #337ab7;
 }
 

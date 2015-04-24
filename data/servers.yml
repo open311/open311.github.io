@@ -1,0 +1,162 @@
+---
+- name: "Quebec, QC"
+  country: "CDN"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aville.quebec.qc.ca"
+  api_key_request: "http://donnees.ville.quebec.qc.ca/DemandeCle/form_cleapi.aspx"
+  jurisdiction_id: "ville.quebec.qc.ca"
+  api_discovery: "http://api.ville.quebec.qc.ca/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://api.ville.quebec.qc.ca/open311/v2/"
+  test_url: "http://dev-api.ville.quebec.qc.ca/open311/V2/"
+  production_ready: true
+  gov_domain: true
+- name: "Gießen, Deutschland"
+  country: "DEU"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Agiessen.de"
+  api_key_request: ""
+  jurisdiction_id: ""
+  api_discovery: "http://maengelmelder.giessen.de/georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://maengelmelder.giessen.de/georeport/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Bonn, Deutschland"
+  country: "DEU"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aville.quebec.qc.ca"
+  api_key_request: "http://anliegen.bonn.de/open311"
+  jurisdiction_id: "ville.quebec.qc.ca"
+  api_discovery: "http://anliegen.bonn.de/georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://anliegen.bonn.de/georeport/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Helsinki, Suomi"
+  country: "FIN"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aasiointi.hel.fi"
+  api_key_request: ""
+  jurisdiction_id: ""
+  api_discovery: "https://asiointi.hel.fi/palautews/rest/v1/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://asiointi.hel.fi/palautews/rest/v1/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Lisboa, Portugal"
+  country: "PRT"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Acm-lisboa.pt"
+  api_key_request: ""
+  jurisdiction_id: ""
+  api_discovery: "http://web4.cm-lisboa.pt/citySDK/discovery/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://open311.cm-lisboa.pt/GeoReport/v1/"
+  test_url: "http://web4.cm-lisboa.pt/citySDK/v1/"
+  production_ready: false
+  gov_domain: true  
+- name: "Baltimore, MD"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abaltimorecity.gov"
+  api_key_request: "http://311.baltimorecity.gov/open311/v2/apps/new"
+  jurisdiction_id: "baltimorecity.gov"
+  api_discovery: "http://311.baltimorecity.gov/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://311.baltimorecity.gov/open311/v2/"
+  test_url: "http://311test.baltimorecity.gov/open311/v2/"
+  production_ready: true
+  gov_domain: true
+- name: "Bloomington, IN"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abloomington.in.gov"
+  api_key_request: "http://bloomington.in.gov/open311-api-key-request"
+  jurisdiction_id: "bloomington.in.gov"
+  api_discovery: "https://bloomington.in.gov/crm/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://bloomington.in.gov/crm/open311/v2/"
+  test_url: "https://bloomington.in.gov/test/open311/v2/"
+  production_ready: true
+  gov_domain: true
+- name: "Boston, MA"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Acityofboston.gov"
+  api_key_request: "https://mayors24.cityofboston.gov/open311"
+  jurisdiction_id: "cityofboston.gov"
+  api_discovery: "https://mayors24.cityofboston.gov/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://mayors24.cityofboston.gov/open311/v2/"
+  test_url: "https://mayors24test.cityofboston.gov/open311/v2/"
+  production_ready: true
+  gov_domain: true
+- name: "Brookline, MA"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abrooklinema.gov"
+  api_key_request: "http://spot.brooklinema.gov/open311"
+  jurisdiction_id: "brooklinema.gov"
+  api_discovery: "http://spot.brooklinema.gov/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://spot.brooklinema.gov/open311/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Chicago, IL"
+  country: "USA"
+  api_documentation: "http://dev.cityofchicago.org/docs/api"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Acityofchicago.org"
+  api_key_request: "http://311api.cityofchicago.org/open311/v2/apps/new"
+  jurisdiction_id: "cityofchicago.org"
+  api_discovery: "http://311api.cityofchicago.org/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://311api.cityofchicago.org/open311/v2/"
+  test_url: "http://test311api.cityofchicago.org/open311/v2/"
+  production_ready: true
+  gov_domain: true
+- name: "Grand Rapids, MI"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Agrcity.us"
+  api_key_request: "http://grcity.spotreporters.com/open311/v2/apps/new"
+  jurisdiction_id: "grcity.us"
+  api_discovery: "http://grcity.spotreporters.com/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://grcity.spotreporters.com/open311/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: false
+- name: "San Francisco, CA"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Asfgov.org"
+  api_key_request: "http://mobile311.sfgov.org/open311/v2/apps/new"
+  jurisdiction_id: "sfgov.org"
+  api_discovery: "http://mobile311.sfgov.org/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://mobile311.sfgov.org/open311/v2/"
+  test_url: "http://mobile311-dev.sfgov.org/open311/v2/"
+  production_ready: true
+  gov_domain: true  
+- name: "Washington D.C."
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Adc.gov"
+  api_key_request: ""
+  jurisdiction_id: "dc.gov"
+  api_discovery: "http://app.311.dc.gov/cwi/Open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://app.311.dc.gov/cwi/Open311/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+
+
+
+
+

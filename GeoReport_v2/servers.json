@@ -1,0 +1,6 @@
+---
+permalink: /GeoReport_v2/servers.json
+layout: null
+filename: servers.json
+---
+{{ site.data.servers | jsonify }}

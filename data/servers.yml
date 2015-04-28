@@ -11,6 +11,42 @@
   test_url: "http://dev-api.ville.quebec.qc.ca/open311/V2/"
   production_ready: true
   gov_domain: true
+- name: "Surrey, BC"
+  country: "CDN"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Asurrey.ca"
+  api_key_request: ""
+  jurisdiction_id: "surrey.ca"
+  api_discovery: "http://cosmos.surrey.ca/api/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://cosmos.surrey.ca/api/open311"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Toronto, ON"
+  country: "CDN"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Atoronto.ca"
+  api_key_request: "https://secure.toronto.ca/webwizard/start.jsp?_wiz_id=API_key_request"
+  jurisdiction_id: "toronto.ca"
+  api_discovery: "https://secure.toronto.ca/open311test/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://secure.toronto.ca/webwizard/ws/"
+  test_url: "https://secure.toronto.ca/open311test/ws/"
+  production_ready: true
+  gov_domain: true
+- name: "Zürich, Schweiz"
+  country: "CHE"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Azurich"
+  api_key_request: ""
+  jurisdiction_id: "zurich"
+  api_discovery: "https://www.zueriwieneu.ch/open311/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://www.zueriwieneu.ch/open311/v2/"
+  test_url: ""
+  production_ready: 
+  gov_domain: true
 - name: "Gießen, Deutschland"
   country: "DEU"
   api_documentation: ""
@@ -57,7 +93,7 @@
   version: "georeport-v2"
   base_url: "https://open311.cm-lisboa.pt/GeoReport/v1/"
   test_url: "http://web4.cm-lisboa.pt/citySDK/v1/"
-  production_ready: false
+  production_ready: 
   gov_domain: true  
 - name: "Baltimore, MD"
   country: "USA"

@@ -46,3 +46,34 @@ The following is a list of official API endpoints for jurisdictions that support
     {% endif %}
 {% endfor %}
 </table>
+
+#### Other Endpoints in Development
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Country</th>                
+        <th>API Discovery</th>
+        <th>API Key Request</th>
+        <th>Documentation</th>
+        <th>Production URL Example</th>
+        <th>Test URL Example</th>
+        <th>Gov Domain</th>
+    </tr>
+{% for server in site.data.servers %}
+    {% if server.production_ready != true %}
+        <tr>
+            <td>{{ server.name }}</td>
+            <td>{{ server.country }}</td>             
+            <td><a href="{{ server.api_discovery }}"><span class="glyphicon glyphicon-cloud-download"></span><span class="sr-only">Download</span></a></td>
+            <td>{% if server.api_key_request.size > 0 %}<a href="{{ server.api_key_request }}"><span class="glyphicon glyphicon-cloud-download"></span><span class="sr-only">Download</span></a>{% endif %}</td>
+            <td>{% if server.api_documentation.size > 0 %}<a href="{{ server.api_documentation }}"><span class="glyphicon glyphicon-file"></span><span class="sr-only">Download</span></a>{% endif %}</td>
+            <td><a href="{{ server.base_url }}services.xml?jurisdiction_id={{ server.jurisdiction_id }}">Production /services.xml </a></td>
+            <td>{% if server.test_url.size > 0 %}<a href="{{ server.test_url }}services.xml?jurisdiction_id={{ server.jurisdiction_id }}">Test /services.xml</a>{% endif %}</td>
+            <td>
+                {% if server.gov_domain == true %}<span class="glyphicon glyphicon-ok text-success"></span><span class="sr-only">Yes</span>{% endif %}
+                {% if server.gov_domain == false %}<span class="glyphicon glyphicon-remove text-danger"></span><span class="sr-only">No</span>{% endif %}
+            </td>
+        </tr>
+    {% endif %}
+{% endfor %}
+</table>

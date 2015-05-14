@@ -9,7 +9,7 @@
   version: "georeport-v2"
   base_url: "http://api.ville.quebec.qc.ca/open311/v2/"
   test_url: "http://dev-api.ville.quebec.qc.ca/open311/V2/"
-  production_ready: true
+  production_ready: 
   gov_domain: true
 - name: "Surrey, BC"
   country: "CDN"
@@ -19,9 +19,9 @@
   jurisdiction_id: "surrey.ca"
   api_discovery: "http://cosmos.surrey.ca/api/open311/discovery.json"
   version: "georeport-v2"
-  base_url: "http://cosmos.surrey.ca/api/open311"
+  base_url: "http://cosmos.surrey.ca/api/open311/"
   test_url: ""
-  production_ready: true
+  production_ready: 
   gov_domain: true
 - name: "Toronto, ON"
   country: "CDN"
@@ -191,8 +191,3 @@
   test_url: ""
   production_ready: true
   gov_domain: true
-
-
-
-
-

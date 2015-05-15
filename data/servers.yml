@@ -155,6 +155,18 @@
   test_url: "http://test311api.cityofchicago.org/open311/v2/"
   production_ready: true
   gov_domain: true
+- name: "Columbus, IN"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Acolumbus.in.gov"
+  api_key_request: ""
+  jurisdiction_id: "columbus.in.gov"
+  api_discovery: "http://csr.columbus.in.gov/csr/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://csr.columbus.in.gov/csr/open311/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
 - name: "Grand Rapids, MI"
   country: "USA"
   api_documentation: ""
@@ -167,6 +179,18 @@
   test_url: ""
   production_ready: true
   gov_domain: false
+- name: "Peoria, IL"
+  country: "USA"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Apeoriagov.org"
+  api_key_request: ""
+  jurisdiction_id: "peoriagov.org"
+  api_discovery: "https://ureport.peoriagov.org/crm/open311/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://ureport.peoriagov.org/crm/open311/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
 - name: "San Francisco, CA"
   country: "USA"
   api_documentation: ""

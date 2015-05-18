@@ -71,6 +71,18 @@
   test_url: ""
   production_ready: true
   gov_domain: true
+- name: "Zaragoza, España"
+  country: "ESP"
+  api_documentation: "http://www.zaragoza.es/ciudad/risp/detalle_Risp?id=1062"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Azaragoza.es"
+  api_key_request: "https://www.zaragoza.es/ciudad/risp/listado_Aplicacion"
+  jurisdiction_id: "zaragoza.es"
+  api_discovery: ""
+  version: "georeport-v2"
+  base_url: "http://www.zaragoza.es/api/recurso/open311/"
+  test_url: ""
+  production_ready: 
+  gov_domain: true
 - name: "Helsinki, Suomi"
   country: "FIN"
   api_documentation: ""

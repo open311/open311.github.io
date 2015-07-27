@@ -50,4 +50,72 @@ Editing & Updating Requests
 
 [Issue #11](https://github.com/open311/open311.github.io/issues/11)
 
+Extended Attributes
+------
+
+[Issue #35](https://github.com/open311/open311.github.io/issues/35)
+
+While the current specification states, "it is recommended that you adhere to the specification strictly and do not include foreign tags or namespaces" many have extended their implementations with additional fields or whole new response objects as part of the GET service request response. In most cases, the default response will not include these extended attributes, but the `extensions` query parameter can be used to return them, e.g. `&extensions=true`
+
+Here's an example of a request response with extended attributes:
+
+~~~
+[
+  {
+    "service_request_id": "4944710",
+    "status": "open",
+    "service_name": "Street or Sidewalk Cleaning",
+    "service_code": "518d5892601827e3880000c5",
+    "description": "Garbage on sidewalk",
+    "requested_datetime": "2015-07-27T16:24:28-07:00",
+    "updated_datetime": "2015-07-27T16:24:28-07:00",
+    "address": "Intersection of Mcallister St & Van Ness Ave",
+    "lat": 37.7797,
+    "long": -122.42,
+    "media_url": "http://mobile311.sfgov.org/media/san_francisco/report/photos/55b6bda3df86c6d37f6d33a4/photo_20150727_162341.jpg",
+    "attributes": [
+      {
+        "label": "Object",
+        "name": "request_type",
+        "value": "Other Loose Garbage / Debris",
+        "code": "Other_loose_garbage_debris_yard_waste"
+      }
+    ],
+    "extended_attributes": {
+      "channel": "android",
+      "x": 6006819.576650221,
+      "y": 2112060.1528775054,
+      "photos": [
+        {
+          "media_url": "http://mobile311.sfgov.org/media/san_francisco/report/photos/55b6bda3df86c6d37f6d33a4/photo_20150727_162341.jpg",
+          "title": "Submitted",
+          "width": 864,
+          "height": 1536,
+          "orientation": "portrait",
+          "created_at": "2015-07-27T16:24:25-07:00"
+        }
+      ]
+    },
+    "notes": [
+      {
+        "datetime": "2015-07-27T16:24:19-07:00",
+        "description": "Submitted via Android",
+        "type": "submitted"
+      },
+      {
+        "datetime": "2015-07-27T16:24:28-07:00",
+        "description": "Opened",
+        "type": "opened"
+      }
+    ]
+  }
+]
+~~~
+
+### Implementing Endpoints
+
+- Chicago
+- Boston
+- San Francisco
+
 

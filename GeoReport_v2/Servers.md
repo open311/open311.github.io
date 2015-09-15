@@ -9,7 +9,7 @@ The following is a list of official API endpoints for jurisdictions that support
 
 <span class="text-danger">*Note that the URLs require a method like /services.xml (and jurisdiction_id if serving multiple jurisdictions). **The base URL is not intended to be accessed directly**. To ensure the Test and Production endpoint URLs listed here reach a valid resource, they all point to the **GET Services** method as an example* </span>
 
-**<span class="text-primary">New!</span> You can now check on the status of endpoints at: <http://open311status.herokuapp.com/>**
+**<span class="text-primary">New!</span> You can now check on the status of endpoints at: <http://status.open311.org/>**
 
 #### Jurisdiction Specific Endpoints
 

@@ -50,6 +50,35 @@ Editing & Updating Requests
 
 [Issue #11](https://github.com/open311/open311.github.io/issues/11)
 
+Update History
+------
+
+[Issue #15](https://github.com/open311/open311.github.io/issues/15)
+
+Example exerpted below with a full example shown under Extended Attributes. 
+
+~~~
+    "notes": [
+      {
+        "datetime": "2015-07-27T16:24:19-07:00",
+        "description": "Submitted via Android",
+        "type": "submitted"
+      },
+      {
+        "datetime": "2015-07-27T16:24:28-07:00",
+        "description": "Opened",
+        "type": "opened"
+      }
+    ]
+~~~
+
+
+### Implementing Endpoints
+
+- Chicago
+- Boston
+- San Francisco
+
 Extended Attributes
 ------
 

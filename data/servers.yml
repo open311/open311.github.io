@@ -77,7 +77,7 @@
   api_issue_tracker: "https://github.com/bfpi/klarschiff-citysdk/issues"
   api_key_request: "http://www.klarschiff-hro.de/impressum.php"
   jurisdiction_id: "rostock.de"
-  api_discovery: ""
+  api_discovery: "https://geo.sv.rostock.de/citysdk/discovery.json"
   version: "georeport-v2"
   base_url: "https://geo.sv.rostock.de/citysdk/"
   test_url: "https://demo.klarschiff-hro.de/citysdk/services.xml"

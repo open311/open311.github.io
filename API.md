@@ -45,7 +45,7 @@ GeoReport v1
 
 #### Client Libraries (API Wrappers)
 
--   [PHP Library](http://github.com/mheadd/PHPOpen311) by Mark Head
+-   [PHP Library](https://github.com/mheadd/PHP-open311) by Mark Head
 
 Inactive APIs
 =============

@@ -62,7 +62,7 @@
 - name: "Bonn, Deutschland"
   country: "DEU"
   api_documentation: ""
-  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aville.quebec.qc.ca"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abonn.de"
   api_key_request: "http://anliegen.bonn.de/open311"
   jurisdiction_id: "ville.quebec.qc.ca"
   api_discovery: "http://anliegen.bonn.de/georeport/v2/discovery.json"
@@ -81,6 +81,54 @@
   version: "georeport-v2"
   base_url: "https://geo.sv.rostock.de/citysdk/"
   test_url: "https://demo.klarschiff-hro.de/citysdk/services.xml"
+  production_ready: true
+  gov_domain: true
+- name: "Brühl, Deutschland"
+  country: "DEU"
+  api_documentation: "https://www.achtet-auf-bruehl.de/content/open311"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Abruehl.de"
+  api_key_request: "https://www.achtet-auf-bruehl.de/content/open311"
+  jurisdiction_id: "bruehl.de"
+  api_discovery: "https://www.achtet-auf-bruehl.de//georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://achtet-auf-bruehl.de/georeport/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Annaberg-Buchholz, Deutschland"
+  country: "DEU"
+  api_documentation: "http://anliegen.annaberg-buchholz.de/content/open311"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aannaberg.de"
+  api_key_request: "http://anliegen.annaberg-buchholz.de/content/open311"
+  jurisdiction_id: "annberg-buchholz.de"
+  api_discovery: "http://anliegen.annaberg-buchholz.de/georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://anliegen.annaberg-buchholz.de/georeport/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Siegburg, Deutschland"
+  country: "DEU"
+  api_documentation: "http://anliegen.siegburg.de/content/open311"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Asiegburg.de"
+  api_key_request: "http://anliegen.siegburg.de/content/open311"
+  jurisdiction_id: "siegburg.de"
+  api_discovery: "http://anliegen.siegburg.de/georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "http://anliegen.siegburg.de/georeport/v2/"
+  test_url: ""
+  production_ready: true
+  gov_domain: true
+- name: "Köln / Cologne, Deutschland"
+  country: "DEU"
+  api_documentation: "https://sags-uns.stadt-koeln.de/seiten/open311"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Astadt-koeln.de"
+  api_key_request: "https://sags-uns.stadt-koeln.de/seiten/open311"
+  jurisdiction_id: "stadt-koeln.de"
+  api_discovery: "https://sags-uns.stadt-koeln.de/georeport/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://sags-uns.stadt-koeln.de/georeport/v2/"
+  test_url: "https://sags-uns-test.stadt-koeln.de/georeport/v2/"
   production_ready: true
   gov_domain: true
 - name: "Zaragoza, España"

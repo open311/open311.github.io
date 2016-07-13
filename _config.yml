@@ -29,6 +29,7 @@ defaults:
 #
 JB :
   version : 0.3.0
+  ASSET_PATH : assets/themes/open311
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.

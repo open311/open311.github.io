@@ -3,3 +3,4 @@ _site
 .ruby-version
 Gemfile.lock
 .bundle
+.sass-cache

@@ -50,6 +50,11 @@ Editing & Updating Requests
 
 [Issue #11](https://github.com/open311/open311.github.io/issues/11)
 
+mySociety extention used on FixMyStreet for sending and receiving updates to requests: https://github.com/mysociety/FixMyStreet/wiki/Open311-FMS---Proposed-differences-to-Open311
+
+mySociety has used this purely as a means of communicating between FixMyStreet and CRM systems
+rather than aiming at users.
+
 Update History
 ------
 

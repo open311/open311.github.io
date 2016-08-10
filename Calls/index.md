@@ -1,6 +1,7 @@
 ---
 title: Calls
-permalink: /Calls/
+permalink: /calls/
+redirect_from: "/Calls"
 ---
 
 Monthly Calls

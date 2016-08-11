@@ -1,6 +1,6 @@
 ---
 title: GeoReport Bulk Data Specification
-permalink: /GeoReport_Bulk_Alpha/
+permalink: /GeoReport/bulk
 ---
 
 The GeoReport Bulk data specification allows developers, researchers, and others to download issues which have been reported to government entities like cities for resolution. These interactions are often referred to as "service requests" or "calls for service" and have traditionally been handled by custom web forms or phone based call centers (sometimes using the 311 phone number or other short-code). The current specification is focused on location-based non-emergency issues such as graffiti, potholes, and street cleaning. It is designed to allow access to larger numbers of records (more than 1,000) that are impractical for a typical [GeoReport_V2 API](/GeoReport_v2/) implementation to provide.

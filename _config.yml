@@ -3,7 +3,7 @@ title: Open311
 description:
 url: 
 production_url: //wiki.open311.org
-data_source: data
+data_dir: data
 
 #Github Repo
 repo_name: open311.github.io

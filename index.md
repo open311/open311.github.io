@@ -10,6 +10,7 @@ Open311 Information
     -   [Open311 GeoReport v2](/GeoReport_v2 "wikilink")
     -   [Supported Software](/GeoReport_v2/Support "wikilink")
     -   [Developer Resources](/GeoReport_v2/Resources "wikilink")
+-   [Open311 Bulk Data Specification](/GeoReport_Bulk_Alpha "wikilink") (proposed/alpha)
 -   [Related Open APIs and Specifications](/Open_APIs "wikilink")
 -   [Ideas & other resources](/Ideation "wikilink")
 

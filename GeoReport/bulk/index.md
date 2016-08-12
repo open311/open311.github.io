@@ -12,14 +12,14 @@ Status
 
 ### Specification
 
-<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but has not yet been launched.
+<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but no publishers have yet implemented it.
 
 ### Servers
 
-None at present; several U.S. cities have made commitments, including: 
+None at present; several U.S. cities are working to implement, including: 
 
 [Louisville, KY](https://twitter.com/edblayney/status/736228693220204544)
-
+Raleigh, NC
 
 
 Internationalization and Encoding
@@ -77,7 +77,8 @@ Data Output
 | requested_datetime | DateTime | See [Date/Time Format](#datetime-format) | No | Yes | The date and time when the service request was made. |
 | updated_datetime | DateTime | See [Date/Time Format](#datetime-format) | No | Yes | The date and time when the service request was last modified. For requests with status=closed, this will be the date the request was closed. |
 | closed_date | DateTime | See [Date/Time Format](#datetime-format) | Yes | No | Date and time the request record was closed or cancelled. This field should be empty/null until the service request has been closed. |
-| status | Text |  | No | Partial | A single-word indicator of the current state of the service request; typically 'Open', 'Processing', 'Hold', or 'Closed' but terms may vary by system. (Note: [GeoReport V2](/GeoReport_v2/) only permits 'open' and 'closed') |
+| status | Text | | Yes | Yes | The current status of the service request. Limited to the values 'open': it has been reported, and 'closed': it has been resolved.
+| status_description | Text |  | No | Partial | A single-word indicator of the current state of the service request; typically 'Open', 'Processing', 'Hold', or 'Closed' but terms may vary by system. (Note: [GeoReport V2](/GeoReport_v2/) only permits 'open' and 'closed') |
 | status_notes | Text |  | No | Yes | Explanation of why status was changed to current state or more details on current status than conveyed with status alone. |
 | source | Text |  | Yes | No | Mechanism or path by which the service request was received; typically 'Phone', 'Text/SMS', 'Website', 'Mobile App', 'Twitter', etc but terms may vary by system. |
 | service_name | Text |  | No | Yes | The human readable name of the service request type |
@@ -99,8 +100,8 @@ Data Output
 
 {: .tab-pane .active #csv-service-request}
 ~~~~
-"service_request_id","requested_datetime","updated_datetime","closed_date","status","status_notes","source","service_name","service_subtype","description","agency_responsible","address","lat","long"
-"638344","2010-04-14T06:37:38-08:00",2010-04-14T06:37:38-08:00","2010-04-14T06:37:38-08:00","closed","Duplicate Request.","Phone","Sidewalk and Curb Issues","sample subtype","sample description","sample agency","8TH AVE and JUDAH ST","37.762221815","-122.4651145"
+"service_request_id","requested_datetime","updated_datetime","closed_date","status","status_description","status_notes","source","service_name","service_subtype","description","agency_responsible","address","lat","long"
+"638344","2010-04-14T06:37:38-08:00",2010-04-14T06:37:38-08:00","2010-04-14T06:37:38-08:00","closed","closed","Duplicate Request.","Phone","Sidewalk and Curb Issues","sample subtype","sample description","sample agency","8TH AVE and JUDAH ST","37.762221815","-122.4651145"
 ~~~~
 
 {: .tab-pane #xml-service-request}
@@ -113,6 +114,7 @@ Data Output
         <updated_datetime>2010-04-14T06:37:38-08:00</updated_datetime>
         <closed_datetime>2010-04-14T06:37:38-08:00</updated_datetime>
         <status>closed</status>
+        <status_description>closed</status>
         <status_notes>Duplicate request.</status_notes>
         <source>Phone/source>
         <service_name>Sidewalk and Curb Issues</service_name>
@@ -135,6 +137,7 @@ Data Output
     "updated_datetime":"2010-04-14T06:37:38-08:00",
     "closed_datetime":"2010-04-14T06:37:38-08:00",
     "status":"closed",
+    "status_description":"closed",
     "status_notes":"Duplicate request.",
     "source","Phone",
     "service_name":"Sidewalk and Curb Issues",

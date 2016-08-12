@@ -136,7 +136,7 @@ Data Output
     "requested_datetime":"2010-04-14T06:37:38-08:00",
     "updated_datetime":"2010-04-14T06:37:38-08:00",
     "closed_datetime":"2010-04-14T06:37:38-08:00",
-    "status":"closed"
+    "status":"closed",
     "status_description":"closed",
     "status_notes":"Duplicate request.",
     "source","Phone",

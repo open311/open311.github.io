@@ -12,14 +12,14 @@ Status
 
 ### Specification
 
-<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but has not yet been launched.
+<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but no publishers have yet implemented it.
 
 ### Servers
 
-None at present; several U.S. cities have made commitments, including: 
+None at present; several U.S. cities are working to implement, including: 
 
 [Louisville, KY](https://twitter.com/edblayney/status/736228693220204544)
-
+Raleigh, NC
 
 
 Internationalization and Encoding

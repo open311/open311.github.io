@@ -179,6 +179,18 @@
   test_url: "http://web4.cm-lisboa.pt/citySDK/v1/"
   production_ready: 
   gov_domain: true  
+- name: "Greenwich, Britain"
+  country: "UK"
+  api_documentation: ""
+  api_issue_tracker: ""
+  api_key_request: ""
+  jurisdiction_id: ""
+  api_discovery: "https://open311.royalgreenwich.gov.uk/assets/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://open311.royalgreenwich.gov.uk/"
+  test_url: "https://staging-open311.royalgreenwich.gov.uk/"
+  production_ready: true
+  gov_domain: true
 - name: "Baltimore, MD"
   country: "USA"
   api_documentation: ""

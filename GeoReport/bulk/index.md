@@ -16,9 +16,10 @@ Status
 
 ### Servers
 
-None at present; several U.S. cities are working to implement, including: 
+[Louisville, Kentucky, United States](https://data.louisvilleky.gov/dataset/311-service-requests)
 
-[Louisville, KY](https://twitter.com/edblayney/status/736228693220204544)
+Additional cities working to implement include:
+
 Raleigh, NC
 
 

@@ -12,7 +12,7 @@ Status
 
 ### Specification
 
-<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but no publishers have yet implemented it.
+<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, and is currently being piloted at the sites listed below.
 
 ### Servers
 

@@ -17,7 +17,9 @@ Status
 ### Servers
 
 [Louisville, Kentucky, United States](https://data.louisvilleky.gov/dataset/311-service-requests)
+
 [Bloomington, Indiana, United States](https://data.bloomington.in.gov/dataset/open311)
+
 
 Additional cities working to implement include:
 

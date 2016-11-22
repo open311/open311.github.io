@@ -18,7 +18,10 @@ Status
 
 None at present; several U.S. cities are working to implement, including: 
 
+[Bloomington, IN](https://data.bloomington.in.gov/dataset/open311)
+
 [Louisville, KY](https://twitter.com/edblayney/status/736228693220204544)
+
 Raleigh, NC
 
 

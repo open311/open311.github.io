@@ -20,10 +20,14 @@ Status
 
 [Bloomington, Indiana, United States](https://data.bloomington.in.gov/dataset/open311)
 
+[San Diego, California, United States](http://data.sandiego.gov/dataset/get-it-done-requests-311)
+
 
 Additional cities working to implement include:
 
 Raleigh, NC
+
+Kansas City, MO
 
 
 Internationalization and Encoding

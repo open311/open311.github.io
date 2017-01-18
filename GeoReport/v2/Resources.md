@@ -41,7 +41,7 @@ Software that interacts with an Open311 server by connecting to an API.
 
 ###### Deprecated Projects 
 - [The Daily Brief](http://dailybrief.311labs.org/) - See live at [dailybrief.311labs.org](http://dailybrief.311labs.org/) 
-- [311.fm](http://www.311.fm/). Code still available at [311-fm-webapp](https://github.com/smartchicago/311-fm-webapp) 
+- [311.fm](http://www.311.fm/) - Code still available at [311-fm-webapp](https://github.com/smartchicago/311-fm-webapp) 
 
 See also open source libraries for [Visualizations](/Visualizations "wikilink")
 

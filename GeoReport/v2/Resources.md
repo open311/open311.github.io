@@ -34,11 +34,14 @@ Software that interacts with an Open311 server by connecting to an API.
 -   [OpenBlock](http://openblockproject.org) is not an Open311 client per se, but can consume and display Open311 reports on a map; [see Boston demo](http://demo.openblockproject.org/open311-service-requests/)
 
 ##### Dashboards & Data Viz
-
--   [The Daily Brief](http://dailybrief.311labs.org/) - See live at [dailybrief.311labs.org](http://dailybrief.311labs.org/)
--   [311.fm](https://github.com/codeforamerica/311fm) - see live at [311.fm](http://www.311.fm/) and also [forked](https://github.com/smartchicago/311-fm-webapp) for [chicagoworksforyou.com](http://chicagoworksforyou.com/)
+-   [chicagoworksforyou.com](http://chicagoworksforyou.com/)[forked](https://github.com/smartchicago/311-fm-webapp) from [311.fm](https://github.com/codeforamerica/311fm)
 -   [Open311 Data Analysis Proxy](https://github.com/codeforamerica/311-fm-data) used for 311.fm
 -   [Open311 Dashboard](https://github.com/codeforamerica/open311dashboard) See the [Blog post](http://codeforamerica.org/2011/08/31/chriss-cfa-summer-preview-the-open311-dashboard/) (in development)
+- [https://hackadashery.github.io](https://hackadashery.github.io/?p=explore) by [Code for Philly](https://codeforphilly.org/projects/philly_311_dashboard)
+
+###### Deprecated Projects 
+- [The Daily Brief](http://dailybrief.311labs.org/) - See live at [dailybrief.311labs.org](http://dailybrief.311labs.org/) 
+- [311.fm](http://www.311.fm/). Code still available at [311-fm-webapp](https://github.com/smartchicago/311-fm-webapp) 
 
 See also open source libraries for [Visualizations](/Visualizations "wikilink")
 

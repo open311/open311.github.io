@@ -19,7 +19,7 @@ Mobile apps and web front-ends that connect to the API. You can also see a searc
 -   [GeoReporter (open source)](http://marketplace.civiccommons.org/apps/georeporter) iPhone app
 -   [Mark-a-Spot](/Mark-a-Spot "wikilink")
 -   [SeeClickFix](http://seeclickfix.com/open311)
--   [Love Clean Streets](http://lovecleanstreets.org)
+-   [Love Clean Streets](http://lovecleanstreets.com)
 
 #### Potential Support
 

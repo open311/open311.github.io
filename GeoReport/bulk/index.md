@@ -12,14 +12,22 @@ Status
 
 ### Specification
 
-<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, but no publishers have yet implemented it.
+<span style="color:red;font-weight:bold">Proposed</span>: The GeoReport Bulk Spec has been researched and proposed, and is currently being piloted at the sites listed below.
 
 ### Servers
 
-None at present; several U.S. cities are working to implement, including: 
+[Louisville, Kentucky, United States](https://data.louisvilleky.gov/dataset/311-service-requests)
 
-[Louisville, KY](https://twitter.com/edblayney/status/736228693220204544)
+[Bloomington, Indiana, United States](https://data.bloomington.in.gov/dataset/open311)
+
+[San Diego, California, United States](http://data.sandiego.gov/dataset/get-it-done-requests-311)
+
+
+Additional cities working to implement include:
+
 Raleigh, NC
+
+Kansas City, MO
 
 
 Internationalization and Encoding

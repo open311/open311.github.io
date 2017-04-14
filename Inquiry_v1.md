@@ -3,21 +3,19 @@ title: Inquiry v1
 permalink: /Inquiry_v1/
 ---
 
-<div style="background-color:#FFF79C">
-Please refer to the NYC Developer Portal for the latest 311 API documentation (https://developer.cityofnewyork.us/api/open311-inquiry)
 
-Additionally, NYC will be decommissioning its inquiry API in the Spring of 2014. Users should visit the NYC Developer portal from that point on.
 
-Note: some of this content is NYC-specific (such as URLs and Category values). Future updates to the specification will need to have these items separated out.
-
-**Use [Inquiry v2 Draft](/Inquiry_v2_Draft "wikilink") to review and add ideas for the next iteration of this proposal and please use the [mailing list](http://lists.open311.org/groups/discuss) for discussion**
-
-</div>
-HTTP 302 responses (Found/Moved Temporarily) should be accepted and followed by client agents.
-
-Note: NYC's implementation is case-sensitive.
-
-While it's not required, please consider registering for NYC's endpoint to be informed about any updates or changes to their API. Their registration page and more information can be found on [nyc.gov](http://home2.nyc.gov/apps/311/allServices.htm?searchUrl=/apps/311/simpleSearchResults.htm%3Fsearch%3DAPI&requestType=service&levelOneId=079351C6-06AD-11DE-AC9C-EF5AFBC474DE&levelTwoId=079351C6-06AD-11DE-AC9C-EF5AFBC474DE-0&serviceName=311+Content+API&finalSubLevel=2&intentId=E9E66310-8137-11DE-8E9F-96DAE110FEB8)
+>Please refer to the [NYC Developer Portal for their latest 311 API documentation](https://developer.cityofnewyork.us/api/open311-inquiry)
+>
+>Note: most of this content is NYC-specific (such as URLs and Category values). Future updates to the specification will need to have these items separated out.
+>
+>**Use [Inquiry v2 Draft](/Inquiry_v2_Draft "wikilink") to review and add ideas for the next iteration of this proposal and please use the [mailing list](http://lists.open311.org/groups/discuss) for discussion**
+>
+>HTTP 302 responses (Found/Moved Temporarily) should be accepted and followed by client agents.
+>
+>Note: NYC's implementation is case-sensitive.
+>
+>While it's not required, please consider registering for NYC's endpoint to be informed about any updates or changes to their API. Their registration page and more information can be found on [nyc.gov](https://developer.cityofnewyork.us/api/open311-inquiry)
 
 Services
 ========
@@ -33,7 +31,7 @@ This method retrieves a list of links to all services and a brief description of
 
 ### URL
 
-<http://><content_api_root>/services/<category>.<content_type>
+`http://<content_api_root>/services/<category>.<content_type>`
 
 #### Sample URLs
 
@@ -47,6 +45,7 @@ This method retrieves a list of links to all services and a brief description of
 
 -   category (/type) – a category or type for a Service. If a category is supplied then the list of Services returned will be restricted to Services belonging to this category. The following categories are supported:
 
+{: .table .table-bordered .table-striped .response-table}
 | Category                               | URL Encoded Value                                |
 |----------------------------------------|--------------------------------------------------|
 | Transportation, Streets, and Sidewalks | Transportation%2C%20Streets%2C%20and%20Sidewalks |
@@ -61,6 +60,7 @@ This method retrieves a list of links to all services and a brief description of
 
 The following types are supported:
 
+{: .table .table-bordered .table-striped .response-table}
 | Type                     | URL Encoded Value | Description                                                                                                                                                                                     |
 |--------------------------|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Top Mobile Services      | mobile            | Services selected by the 311 Content Team to be promoted as “Top Services” on the 311 iPhone application. (A service may exist as a top service for a web platform, a mobile platform or both). |
@@ -76,8 +76,15 @@ The following types are supported:
 -   expiration – the date the Service expires. Expiration will occur at 12:00 AM of the date specified.
 -   brief_description – a short description of the Service
 
-<tabs> <tab title="XML">
 
+{: .nav .nav-tabs}
+- <a href="#xml-service-list" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-service-list" role="tab" data-toggle="tab">JSON</a>
+
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-service-list}
+~~~~
     <services>
       <service>
         <id>20090318-FA993876-13C9-11DE-9981-FA93D1CD8644</id>
@@ -86,9 +93,10 @@ The following types are supported:
         <brief_description>Complaint about excessive noise.</brief_description>
       </service>
     </services>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane #json-service-list}
+~~~~
     [
       {
         "id":"20090318-FA993876-13C9-11DE-9981-FA93D1CD8644",
@@ -97,8 +105,9 @@ The following types are supported:
         "brief_description":"Complaint about excessive noise."
       }
     ]
+~~~~
 
-</tab> </tabs>
+</div>
 
 Get Service
 -----------
@@ -107,12 +116,12 @@ This method retrieves detailed information about the Service requested. Services
 
 ### URL
 
-<http://><content_api_root>/services/<service_id>.<content_type>
+`http://<content_api_root>/services/<service_id>.<content_type>`
 
 #### Sample URLs
 
--   <http://www.nyc.gov/portal/apps/311_contentapi/services/2003-07-21-11-45-37_000010083f1c0aa44000a0e7.xml>
--   <http://www.nyc.gov/portal/apps/311_contentapi/services/2003-07-21-11-45-37_000010083f1c0aa44000a0e7.json>
+-   http://www.nyc.gov/portal/apps/311_contentapi/services/2003-07-21-11-45-37_000010083f1c0aa44000a0e7.xml
+-   http://www.nyc.gov/portal/apps/311_contentapi/services/2003-07-21-11-45-37_000010083f1c0aa44000a0e7.json
 
 ### Inputs
 
@@ -135,8 +144,14 @@ This method retrieves detailed information about the Service requested. Services
 -   label – human readable text label for a web action
 -   url – the URL for a Web Action that is a link
 
-<tabs> <tab title="XML">
+{: .nav .nav-tabs}
+- <a href="#xml-get-service" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-get-service" role="tab" data-toggle="tab">JSON</a>
 
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-get-service}
+~~~~
     <services>
       <service>
         <id> 2003-07-21-11-45-37_000010083f1c0aa44000a0e7</id>
@@ -163,9 +178,10 @@ This method retrieves detailed information about the Service requested. Services
         </web_actions>
       </service>
     </services>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane #json-get-service}
+~~~~
     [
       {
         "id":" 2003-07-21-11-45-37_000010083f1c0aa44000a0e7",
@@ -194,8 +210,8 @@ This method retrieves detailed information about the Service requested. Services
         ]
       }
     ]
-
-</tab> </tabs>
+~~~~
+</div>
 
 Facilities
 ==========
@@ -211,7 +227,7 @@ This method retrieves a list of links to all Facilities and a brief description 
 
 ### URL
 
-<http://><content_api_root>/facilities/<category>.<content_type>
+`http://<content_api_root>/facilities/<category>.<content_type>`
 
 #### Sample URLs
 
@@ -223,6 +239,7 @@ This method retrieves a list of links to all Facilities and a brief description 
 
 -   category - a category for a Facility. If this argument is supplied then the list of Facilities returned will be restricted to Facilities of this type. The following category values are supported:
 
+{: .table .table-bordered .table-striped .response-table}
 | Input Value                 | Encoded Input Value               |
 |-----------------------------|-----------------------------------|
 | After School Program        | After%20School%20Program          |
@@ -272,8 +289,14 @@ This method retrieves a list of links to all Facilities and a brief description 
 -   brief_description – a short description of the Facility
 -   Note: When requesting a list of all facilities, the facility type (category) will also be included.
 
-<tabs> <tab title="XML">
+{: .nav .nav-tabs}
+- <a href="#xml-facility-list" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-facility-list" role="tab" data-toggle="tab">JSON</a>
 
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-facility-list}
+~~~~
     <facilities>
       <facility>
         <id>20090318-FA993876-13C9-11DE-9981-FA93D1CD8644</id>
@@ -284,9 +307,10 @@ This method retrieves a list of links to all Facilities and a brief description 
         </brief_description>
       </facility>
     </facilities>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane .active #json-facility-list}
+~~~~
     [
       {
         "id":"20090318-FA993876-13C9-11DE-9981-FA93D1CD8644",
@@ -296,8 +320,8 @@ This method retrieves a list of links to all Facilities and a brief description 
         "brief_description":"A small park located in the Alphabet City section of the East Village in Manhattan."
       }
     ]
-
-</tab> </tabs>
+~~~~
+</div>
 
 Get Facility
 ------------
@@ -306,7 +330,7 @@ This method retrieves detailed information about the Facility requested. Facilit
 
 ### URL
 
-<http://><content_api_root>/facilities/<facility_id>.<content_type>
+`http://<content_api_root>/facilities/<facility_id>.<content_type>`
 
 #### Sample URLs
 
@@ -340,8 +364,14 @@ This method retrieves detailed information about the Facility requested. Facilit
 -   long – the longitude of the Facility (this value may only be compatible with NY State Plane coordinate systems)
 -   eligibility_information – requirements for being eligible to use the Facility.
 
-<tabs> <tab title="XML">
+{: .nav .nav-tabs}
+- <a href="#xml-get-facility" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-get-facility" role="tab" data-toggle="tab">JSON</a>
 
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-get-facility}
+~~~~
     <facilities>
       <facility>
         <id>20040329-052C82FA-81F5-11D8-ACEF-DCA5D018311B</id>
@@ -370,9 +400,10 @@ This method retrieves detailed information about the Facility requested. Facilit
         <eligibility_information/>
       </facility>
     </facilities>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane .active #json-get-facility}
+~~~~
     [
     {
         "id":"20040329-052C82FA-81F5-11D8-ACEF-DCA5D018311B",
@@ -401,8 +432,8 @@ This method retrieves detailed information about the Facility requested. Facilit
         "eligibility_information":""
     }
     ]
-
-</tab> </tabs>
+~~~~
+</div>
 
 Frequently Asked Questions
 ==========================
@@ -418,7 +449,7 @@ This method retrieves a list of links to all FAQs and a brief description of eac
 
 ### URL
 
-<http://><content_api_root>/web_faqs/<category>.<content_type>
+`http://<content_api_root>/web_faqs/<category>.<content_type>`
 
 #### Sample URLs
 
@@ -431,6 +462,7 @@ This method retrieves a list of links to all FAQs and a brief description of eac
 
 -   category (/type) – a category or type for a FAQ. If a category is supplied then the list of FAQs returned will be restricted to FAQs belonging to that category. The following categories are supported:
 
+{: .table .table-bordered .table-striped .response-table}
 | Category                               | URL Encoded Value                                |
 |----------------------------------------|--------------------------------------------------|
 | Transportation, Streets, and Sidewalks | Transportation%2C%20Streets%2C%20and%20Sidewalks |
@@ -445,10 +477,11 @@ This method retrieves a list of links to all FAQs and a brief description of eac
 
 The following types are supported:
 
+{: .table .table-bordered .table-striped .response-table}
 | Type     | URL Encoded Value | Description                                                                                                                                                                                                                                                |
 |----------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | All FAQs | all               | Returns a list of all available FAQs                                                                                                                                                                                                                       |
-| Top FAQs | web               | FAQs curated by the 311 Content Team to be promoted as “Top FAQs”. Please note that the URL path for this method is currently inconsistent with the rest of the FAQ methods. Use <http://><content_api_root>/faqs/web.<content_type> until further notice. |
+| Top FAQs | web               | FAQs curated by the 311 Content Team to be promoted as “Top FAQs”. Please note that the URL path for this method is currently inconsistent with the rest of the FAQ methods. Use `http://<content_api_root>/faqs/web.<content_type>` until further notice. |
 
 ### Response Structure
 
@@ -458,8 +491,14 @@ The following types are supported:
 -   question – name of the FAQ record
 -   expiration – the date the FAQ record expires. Expiration will occur at 12:00 AM of the date specified.
 
-<tabs> <tab title="XML">
+{: .nav .nav-tabs}
+- <a href="#xml-get-faq-list" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-get-faq-list" role="tab" data-toggle="tab">JSON</a>
 
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-get-faq-list}
+~~~~
     <faqs>
       <faq>
         <id>20120917-8BA27FD8-00DB-11E2-AC9C-EF5AFBC474DE</id>
@@ -467,9 +506,10 @@ The following types are supported:
         <expiration>2011-12-31T23:59:59Z</expiration>
       </faq>
     </faqs>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane .active #json-get-faq-list}
+~~~~
     [
       {
         "id":"20120917-8BA27FD8-00DB-11E2-AC9C-EF5AFBC474DE",
@@ -477,8 +517,9 @@ The following types are supported:
         "expiration":"2011-12-31T23:59:59Z",
       }
     ]
+~~~~
 
-</tab> </tabs>
+</div>
 
 Get FAQ
 -------
@@ -511,8 +552,14 @@ This method retrieves detailed information about the FAQ requested. FAQs are spe
 -   answer_html – the response to the question in encoded HTML. This is typically used to provide links to additional relevant content outside of the 311 inquiry API.
 -   services – a list of services which are related to this FAQ. Developers should check the nested service expiration date to ensure the each returned service is currently valid
 
-<tabs> <tab title="XML">
+{: .nav .nav-tabs}
+- <a href="#xml-get-faq" role="tab" data-toggle="tab">XML</a>
+- <a href="#json-get-faq" role="tab" data-toggle="tab">JSON</a>
 
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-get-faq}
+~~~~
     <faqs>
       <faq>
         <id>20120917-8BA27FD8-00DB-11E2-AC9C-EF5AFBC474DE</id>
@@ -538,9 +585,10 @@ This method retrieves detailed information about the FAQ requested. FAQs are spe
         </services>
       </faq>
     </faqs>
+~~~~
 
-</tab> <tab title="JSON">
-
+{: .tab-pane .active #json-get-faq}
+~~~~
     [{
         "id":"20120917-8BA27FD8-00DB-11E2-AC9C-EF5AFBC474DE",
         "question":"Can I smoke in the park?",
@@ -564,8 +612,8 @@ This method retrieves detailed information about the FAQ requested. FAQs are spe
             }
         ]
     }]
-
-</tab> </tabs>
+~~~~
+</div>
 
 311 Today
 =========
@@ -581,7 +629,7 @@ This method retrieves an RSS feed that contains a total of 39 days of 311 Today 
 
 ### URL
 
-<http://><content_api_root>/311TodayContent.rss
+`http://<content_api_root>/311TodayContent.rss`
 
 #### Sample URLs
 
@@ -612,8 +660,14 @@ N/A
 -   <content:encoded> – HTML code wrapped for the detail of the content around the CDATA tag. This data is expected to rendered as HTML code.
 -   dc:coverage – describes the event date of the content. It is in yyyy-MM-dd format.
 
-<tabs> <tab title="XML">
 
+{: .nav .nav-tabs}
+- <a href="#xml-311-today" role="tab" data-toggle="tab">XML</a>
+
+<div class="tab-content" markdown="1">
+
+{: .tab-pane .active #xml-311-today}
+~~~~
     <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
       <channel>
         <title>NYC 311 Today RSS feed</title>
@@ -637,5 +691,5 @@ N/A
     ...
       </channel>
     </rss>
-
-</tab> </tabs>
+~~~~
+</div>

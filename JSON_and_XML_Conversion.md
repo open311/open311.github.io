@@ -608,6 +608,9 @@ The Abdera convention is what is used within the Apache Abdera project to show A
 
     ({
         "reports": {
+            "attributes": {
+                "ns": "http://www.w3.org/2005/Atom"
+            },
             "children": [
                 {
                     "entry": {
@@ -634,6 +637,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         },
                         "content": {
                             "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
                                 "type": "xml"
                             },
                             "children": [
@@ -674,6 +678,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         },
                         "content": {
                             "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
                                 "type": "xml"
                             },
                             "children": [
@@ -714,6 +719,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         },
                         "content": {
                             "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
                                 "type": "xml"
                             },
                             "children": [

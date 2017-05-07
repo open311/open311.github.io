@@ -618,8 +618,10 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         "title": "A large tree branch is blocking the road",
                         "updated": "2010-04-13T18:30:02-05:00",
                         "link": {
-                            "href": "http://open311.sfgov.org/dev/V1/reports/637619.xml",
-                            "rel": "self"
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637619.xml",
+                                "rel": "self"
+                            }
                         },
                         "author": {
                             "name": "John Doe"
@@ -659,8 +661,10 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         "title": "A large tree branch is blocking the road",
                         "updated": "2010-04-13T18:30:02-05:00",
                         "link": {
-                            "href": "http://open311.sfgov.org/dev/V1/reports/637620.xml",
-                            "rel": "self"
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637620.xml",
+                                "rel": "self"
+                            }
                         },
                         "author": {
                             "name": "John Doe"
@@ -700,8 +704,10 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                         "title": "A large tree branch is blocking the road",
                         "updated": "2010-04-13T18:30:02-05:00",
                         "link": {
-                            "href": "http://open311.sfgov.org/dev/V1/reports/637621.xml",
-                            "rel": "self"
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637621.xml",
+                                "rel": "self"
+                            }
                         },
                         "author": {
                             "name": "John Doe"

@@ -648,7 +648,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                                     "address": "1600 Market St, San Francisco, CA 94103",
                                     "description": "A large tree branch is blocking the road",
                                     "status": "created",
-                                    "status_notes": null,
+                                    "status_notes": {},
                                     "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
                                 }
                             ]
@@ -691,7 +691,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                                     "address": "56 Market St, San Francisco, CA 94103",
                                     "description": "A large tree branch is blocking the road",
                                     "status": "created",
-                                    "status_notes": null,
+                                    "status_notes": {},
                                     "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
                                 }
                             ]
@@ -734,7 +734,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
                                     "address": "1800 Market St, San Francisco, CA 94103",
                                     "description": "A large tree branch is blocking the road",
                                     "status": "created",
-                                    "status_notes": null,
+                                    "status_notes": {},
                                     "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
                                 }
                             ]
@@ -748,7 +748,7 @@ The Abdera convention is what is used within the Apache Abdera project to show A
 The Cobra Convention
 ---------------------
 
-The Cobra convention is what is used within the Cisco ACI product (CobraSDK) and is very closely related to the Abdera convention. The difference is that an attributes dictionary is always present if multiplte children exist (even when empty), the attributes are sorted by name, and it also does not convert xmlstring values, every value is considered a string in the Cobra convention.
+The Cobra convention is what is used within the Cisco ACI product (CobraSDK) and is very closely related to the Abdera convention. The difference is that an attributes dictionary is always present if multiple children exist (even when empty), the attributes are sorted by name, and every value is considered a string in the Cobra convention (it does not automatically convert to types).
 
 ### References
 

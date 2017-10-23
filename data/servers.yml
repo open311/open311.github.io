@@ -91,7 +91,7 @@
   jurisdiction_id: "bruehl.de"
   api_discovery: "https://www.achtet-auf-bruehl.de//georeport/v2/discovery.json"
   version: "georeport-v2"
-  base_url: "https://achtet-auf-bruehl.de/georeport/v2/"
+  base_url: "https://www.achtet-auf-bruehl.de/georeport/v2/"
   test_url: ""
   production_ready: true
   gov_domain: true

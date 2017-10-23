@@ -155,6 +155,18 @@
   test_url: ""
   production_ready: true
   gov_domain: true
+- name: "Turku, Suomi"
+  country: "FIN"
+  api_documentation: ""
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aturku.fi"
+  api_key_request: ""
+  jurisdiction_id: ""
+  api_discovery: "https://api.turku.fi/feedback/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://api.turku.fi/feedback/v1/"
+  test_url: "https://api.turku.fi/feedback-test/v1/"
+  production_ready: true
+  gov_domain: true
 - name: "Lamía, Elláda"
   country: "GRC"
   api_documentation: "https://participation.citysdk.lamia-city.gr/rest"

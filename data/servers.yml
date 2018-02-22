@@ -204,7 +204,7 @@
   production_ready: 
   gov_domain: true  
 - name: "Greenwich, Britain"
-  country: "UK"
+  country: "GBR"
   api_documentation: ""
   api_issue_tracker: ""
   api_key_request: ""

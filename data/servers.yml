@@ -1,6 +1,18 @@
 ---
+- name: "Ottawa, ON"
+  country: "CAN"
+  api_documentation: "http://data.ottawa.ca/dataset/open311"
+  api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aottawa.ca"
+  api_key_request: "https://ottawa.ca/en/open311-api-key-registration-form"
+  jurisdiction_id:
+  api_discovery: "https://city-of-ottawa-prod.apigee.net/open311/v2/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://city-of-ottawa-prod.apigee.net/open311/v2/"
+  test_url: "https://city-of-ottawa-dev.apigee.net/open311/v2/"
+  production_ready: true
+  gov_domain: true
 - name: "Quebec, QC"
-  country: "CDN"
+  country: "CAN"
   api_documentation: ""
   api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Aville.quebec.qc.ca"
   api_key_request: "http://donnees.ville.quebec.qc.ca/DemandeCle/form_cleapi.aspx"
@@ -12,7 +24,7 @@
   production_ready: 
   gov_domain: true
 - name: "Surrey, BC"
-  country: "CDN"
+  country: "CAN"
   api_documentation: ""
   api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Asurrey.ca"
   api_key_request: ""
@@ -24,7 +36,7 @@
   production_ready: 
   gov_domain: true
 - name: "Toronto, ON"
-  country: "CDN"
+  country: "CAN"
   api_documentation: ""
   api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Atoronto.ca"
   api_key_request: "https://secure.toronto.ca/webwizard/start.jsp?_wiz_id=API_key_request"

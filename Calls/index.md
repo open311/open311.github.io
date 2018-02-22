@@ -4,15 +4,10 @@ permalink: /calls/
 redirect_from: "/Calls"
 ---
 
-Calls
-=============
+{% include JB/tag_list tag="call" %}
 
 <ul>
-{% for page in site.pages %}
-    {% for tag in page.tags %}
-        {% if tag == "call" %}
-            <li><a href="{{ page.url }}">{{page.title}}</a></li>
-        {% endif %}
-    {% endfor %}
+{% for page in tag_pages %}
+    <li><a href="{{ page.url }}">{{page.title}}</a></li>
 {% endfor %}
 </ul>

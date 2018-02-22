@@ -1,0 +1,13 @@
+{% assign tag_pages = "" | split: ""  %}
+
+{% for page in site.pages %}
+    {% for tag in page.tags %}
+        {% if tag == include.tag %}
+            {% assign tag_pages = tag_pages | push: page %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+{% if tag_pages and tag_pages != blank %}
+    {% assign tag_pages = tag_pages | sort: 'permalink' | reverse %}
+{% endif %}

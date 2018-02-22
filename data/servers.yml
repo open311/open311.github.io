@@ -10,7 +10,7 @@
   base_url: "https://city-of-ottawa-prod.apigee.net/open311/v2/"
   test_url: "https://city-of-ottawa-dev.apigee.net/open311/v2/"
   production_ready: true
-  gov_domain: true
+  gov_domain: false
 - name: "Quebec, QC"
   country: "CAN"
   api_documentation: ""

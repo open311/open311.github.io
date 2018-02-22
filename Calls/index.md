@@ -4,10 +4,15 @@ permalink: /calls/
 redirect_from: "/Calls"
 ---
 
-Monthly Calls
+Calls
 =============
--   [August 2016](/calls/2016-08)
--   [July 2016](/calls/2016-07)
--   [September 2011](/calls/2011-09)
--   [September 2011 Summit](/calls/2011-09-Summit)
--   [November 2011](/calls/2011-11)
+
+<ul>
+{% for page in site.pages %}
+    {% for tag in page.tags %}
+        {% if tag == "call" %}
+            <li><a href="{{ page.url }}">{{page.title}}</a></li>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>

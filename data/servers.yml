@@ -265,7 +265,7 @@
   gov_domain: true
 - name: "Chicago, IL"
   country: "USA"
-  api_documentation: "http://dev.cityofchicago.org/docs/api"
+  api_documentation: "http://dev.cityofchicago.org/docs/open311/"
   api_issue_tracker: "https://github.com/open311/open311.github.io/issues?q=is%3Aopen+is%3Aissue+label%3Acityofchicago.org"
   api_key_request: "http://311api.cityofchicago.org/open311/v2/apps/new"
   jurisdiction_id: "cityofchicago.org"

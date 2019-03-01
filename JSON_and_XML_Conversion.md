@@ -606,112 +606,299 @@ The Abdera convention is what is used within the Apache Abdera project to show A
 
 ### JSON Representation
 
-I'm not entirely sure if this is accurate since I did it by hand from inference.
+    ({
+        "reports": {
+            "attributes": {
+                "ns": "http://www.w3.org/2005/Atom"
+            },
+            "children": [
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637619.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637619.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": 637619,
+                                    "address": "1600 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {},
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637620.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637620.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": 637620,
+                                    "address": "56 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {},
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637621.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637621.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": 637621,
+                                    "address": "1800 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {},
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    });
+
+The Cobra Convention
+---------------------
+
+The Cobra convention is what is used within the Cisco ACI product (CobraSDK) and is very closely related to the Abdera convention. The difference is that an attributes dictionary is always present if multiple children exist (even when empty), the attributes are sorted by name, and every value is considered a string in the Cobra convention (it does not automatically convert to types).
+
+### References
+
+-   **Documentation**: <https://github.com/datacenter/cobra/blob/master/cobra/internal/codec/jsoncodec.py>
+-   **Cisco CobraSDK (Python)**: <https://github.com/datacenter/cobra>
+
+### JSON Representation
 
     ({
         "reports": {
-            "entry": [{
-                "id": "tag:open311.sfgov.org,2010-04-15:\/dev\/V1\/reports\/637619.xml",
-                "title": "A large tree branch is blocking the road",
-                "updated": "2010-04-13T18:30:02-05:00",
-                "link": {
-                    "rel": "self",
-                    "href": "http:\/\/open311.sfgov.org\/dev\/V1\/reports\/637619.xml"
-                },
-                "author": {
-                    "name": "John Doe"
-                },
-                "georss:point": "40.7111 -73.9565",
-                "category": {
-                    "attributes": {
-                        "label": "Damaged tree",
-                        "term": "tree-damage",
-                        "scheme": "https:\/\/open311.sfgov.org\/dev\/V1\/categories\/006.xml"
-                    },
-                    "children": ["006"]
-                },
-                "content": {
-                    "children": [{
-                        "report_id": "637619",
-                        "address": "1600 Market St, San Francisco, CA 94103",
-                        "description": "A large tree branch is blocking the road",
-                        "status": "created",
-                        "status_notes": [],
-                        "policy": "The City will inspect and require the responsible party to correct within 24 hours and\/or issue a Correction Notice or Notice of Violation of the Public Works Code"
-                    }],
-                    "attributes": {
-                        "type": "xml"
-                    }
-                }
+            "attributes": {
+                "ns": "http://www.w3.org/2005/Atom"
             },
-            {
-                "id": "tag:open311.sfgov.org,2010-04-15:\/dev\/V1\/reports\/637620.xml",
-                "title": "A large tree branch is blocking the road",
-                "updated": "2010-04-13T18:30:02-05:00",
-                "link": {
-                    "rel": "self",
-                    "href": "http:\/\/open311.sfgov.org\/dev\/V1\/reports\/637620.xml"
+            "children": [
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637619.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637619.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": "637619",
+                                    "address": "1600 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {
+                                        "attributes": {}
+                                    },
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
+                    }
                 },
-                "author": {
-                    "name": "John Doe"
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637620.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637620.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": "637620",
+                                    "address": "56 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {
+                                        "attributes": {}
+                                    },
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
+                    }
                 },
-                "georss:point": "40.7111 -73.9565",
-                "category": {
-                    "attributes": {
-                        "label": "Damaged tree",
-                        "term": "tree-damage",
-                        "scheme": "https:\/\/open311.sfgov.org\/dev\/V1\/categories\/006.xml"
-                    },
-                    "children": ["006"]
-                },
-                "content": {
-                    "children": [{
-                        "report_id": "637620",
-                        "address": "1600 Market St, San Francisco, CA 94103",
-                        "description": "A large tree branch is blocking the road",
-                        "status": "created",
-                        "status_notes": [],
-                        "policy": "The City will inspect and require the responsible party to correct within 24 hours and\/or issue a Correction Notice or Notice of Violation of the Public Works Code"
-                    }],
-                    "attributes": {
-                        "type": "xml"
+                {
+                    "entry": {
+                        "id": "tag:open311.sfgov.org,2010-04-15:/dev/V1/reports/637621.xml",
+                        "title": "A large tree branch is blocking the road",
+                        "updated": "2010-04-13T18:30:02-05:00",
+                        "link": {
+                            "attributes": {
+                                "href": "http://open311.sfgov.org/dev/V1/reports/637621.xml",
+                                "rel": "self"
+                            }
+                        },
+                        "author": {
+                            "name": "John Doe"
+                        },
+                        "{http://www.georss.org/georss}point": "40.7111 -73.9565",
+                        "category": {
+                            "attributes": {
+                                "label": "Damaged tree"
+                                "scheme": "https://open311.sfgov.org/dev/V1/categories/006.xml",
+                                "term": "tree-damage",
+                            },
+                            "children": [
+                                "006"
+                            ]
+                        },
+                        "content": {
+                            "attributes": {
+                                "ns": "http://open311.org/spec/georeport-v1",
+                                "type": "xml"
+                            },
+                            "children": [
+                                {
+                                    "report_id": "637621",
+                                    "address": "1800 Market St, San Francisco, CA 94103",
+                                    "description": "A large tree branch is blocking the road",
+                                    "status": "created",
+                                    "status_notes": {
+                                        "attributes": {}
+                                    },
+                                    "policy": "The City will inspect and require the responsible party to correct within 24 hours and/or issue a Correction Notice or Notice of Violation of the Public Works Code"
+                                }
+                            ]
+                        }
                     }
                 }
-            },
-            {
-                "id": "tag:open311.sfgov.org,2010-04-15:\/dev\/V1\/reports\/637620.xml",
-                "title": "A large tree branch is blocking the road",
-                "updated": "2010-04-13T18:30:02-05:00",
-                "link": {
-                    "rel": "self",
-                    "href": "http:\/\/open311.sfgov.org\/dev\/V1\/reports\/637620.xml"
-                },
-                "author": {
-                    "name": "John Doe"
-                },
-                "georss:point": "40.7111 -73.9565",
-                "category": {
-                    "attributes": {
-                        "label": "Damaged tree",
-                        "term": "tree-damage",
-                        "scheme": "https:\/\/open311.sfgov.org\/dev\/V1\/categories\/006.xml"
-                    },
-                    "children": ["006"]
-                },
-                "content": {
-                    "children": [{
-                        "report_id": "637620",
-                        "address": "1600 Market St, San Francisco, CA 94103",
-                        "description": "A large tree branch is blocking the road",
-                        "status": "created",
-                        "status_notes": [],
-                        "policy": "The City will inspect and require the responsible party to correct within 24 hours and\/or issue a Correction Notice or Notice of Violation of the Public Works Code"
-                    }],
-                    "attributes": {
-                        "type": "xml"
-                    }
-                }
-            }]
+            ]
         }
     });
 

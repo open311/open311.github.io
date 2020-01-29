@@ -95,6 +95,17 @@
   test_url: "https://demo.klarschiff-hro.de/citysdk/"
   production_ready: true
   gov_domain: true
+- name: "Schwerin, Deutschland"
+  country: "DEU"
+  api_documentation: "https://github.com/bfpi/klarschiff-citysdk"
+  api_issue_tracker: "https://github.com/bfpi/klarschiff-citysdk/issues"
+  api_key_request: "https://www.klarschiff-sn.de/static/imprint"
+  jurisdiction_id: "schwerin.de"
+  api_discovery: "https://www.klarschiff-sn.de/citysdk/discovery.json"
+  version: "georeport-v2"
+  base_url: "https://www.klarschiff-sn.de/citysdk/"
+  production_ready: true
+  gov_domain: true
 - name: "Brühl, Deutschland"
   country: "DEU"
   api_documentation: "https://www.achtet-auf-bruehl.de/content/open311"

@@ -156,3 +156,11 @@ Data Output
 ]
 ~~~~
 </div>
+
+#### Validators
+The following list of validation tools can help you test whether your bulk output is compatible with the GeoReport Bulk Specification
+
+{: .table .table-bordered .table-striped .response-table}
+| Tool | Versions Supported | Formats Supported | Platform |
+|------|--------------------|-------------------|----------|
+| [R Script (beta)](https://gist.github.com/technickle/5b8bfe67537fe99862d2e862b00038f0) | Proposed | CSV | [R](https://www.r-project.org/) |
